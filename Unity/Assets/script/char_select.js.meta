@@ -1,10 +1,18 @@
 fileFormatVersion: 2
 guid: 1e87fc167094ee343b584b5aba527aa0
-timeCreated: 1446017353
+timeCreated: 1447121151
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sound: {instanceID: 0}
+  - SE_select: {fileID: 8300000, guid: 80798c016ea016d4fa08cf6e789387ec, type: 3}
+  - rikishi_name: {instanceID: 0}
+  - rikishi_detail: {instanceID: 0}
+  - name_tm: {instanceID: 0}
+  - detail_tm: {instanceID: 0}
+  - rikishi1: {instanceID: 0}
+  - rikishi2: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
