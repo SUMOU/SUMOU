@@ -1,10 +1,24 @@
 ﻿//#pragma strict
 
+/************************
+* フェード イン/アウト
+************************/
+private var texture : Texture2D;
+private var sequence : String = null;
+private var from : Color;
+private var to : Color;
+private var now : Color; 
+private var time : float;
+
+//遷移時フェードイン
+FadeOut( 0, Color.black );
+FadeIn( 1, Color.black );
+
 /**************
 *  音声宣言
 **************/
 public var sound : AudioSource; //AudioSourceコンポーネント
-public var SE_select : AudioClip;   //発砲音を代入
+public var SE_select : AudioClip;   //音を代入
 
 
 /**************************
@@ -52,6 +66,7 @@ rikishi[5] = GameObject.Find("rikishi6");
 
 //最初の1回実行される関数
 function Start () {
+	
 	
 	//効果音取得
 	sound = this.gameObject.GetComponent(AudioSource);
@@ -142,6 +157,7 @@ function select_moves(direction){
 	detail_tm.text = details[select_No];
 
 
+	//次の画面にselect_Noを渡す
 	PlayerPrefs.SetInt("select_No", select_No);
 }
 
@@ -149,10 +165,58 @@ function select_moves(direction){
 //キャラ選択決定
 function window_change(){
 
-//Debug.Log(aa);
-
 	//ゲーム画面遷移
-	Application.LoadLevel("game_end");
+	Application.LoadLevel("banduke");
 
 }
 
+
+
+
+/************************
+* フェード イン/アウト
+************************/
+function Awake(){
+    texture = new Texture2D( 1, 1, TextureFormat.ARGB32, false );
+    texture.SetPixel(0,0, Color.white );
+    texture.Apply();
+}
+
+function OnGUI(){
+    if( now.a != 0 ){
+    GUI.color = now;
+    GUI.DrawTexture( Rect( 0, 0, Screen.width, Screen.height ), texture );
+    }
+}
+
+function StartSequence( function_name : String ){
+    if( sequence ){
+    StopCoroutine( sequence );
+    sequence = null;
+    }
+    sequence = function_name;
+    StartCoroutine( sequence );
+}
+
+function FadeUpdate(){
+    var now_time : float = 0;
+    while( 0 < time && now_time < time ){ 
+    now_time += Time.deltaTime;
+    now = Color.Lerp( from, to, now_time / time );
+    yield;
+    }
+    now = to;
+}
+
+function FadeIn( t_time : float, t_color : Color ){
+    to = from = t_color;
+    to.a = 0;
+    time = t_time;
+    StartSequence( "FadeUpdate" );
+}
+function FadeOut( t_time : float , t_color : Color ){
+    to = from = t_color;
+    from.a = 0;
+    time = t_time;
+    StartSequence( "FadeUpdate" );
+}
