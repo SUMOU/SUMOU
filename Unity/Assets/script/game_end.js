@@ -2,10 +2,10 @@
 
 //ゲーム終了画面オブジェクト
 var end:GameObject;
-var bar;
+var bar:GameObject;
 
 
-//選択された力士番号
+//選択された力士番号取得
 //rikishi_No = PlayerPrefs.GetInt("select_No");
 
 
