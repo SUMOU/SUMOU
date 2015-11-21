@@ -55,7 +55,8 @@ var materials:Material[];
 var select_char;
 var select_No : int=0;
 
-var rikishi = new Array ();
+var rikishi : GameObject[] = new GameObject[6]; //GameObjectの配列はUnityの組み込み配列を使う
+
 rikishi[0] = GameObject.Find("rikishi1");
 rikishi[1] = GameObject.Find("rikishi2");
 rikishi[2] = GameObject.Find("rikishi3");
@@ -81,8 +82,8 @@ function Start () {
 	//力士2以降非表示（Inspectorのオブジェクト名左のチェックをはずした状態）
 	//SetActiveは該当要素のみ
 	//SetActiveRecursivelyは階層も含めた要素
-	for(i=1 ; i<=5 ; i++){
-		rikishi[i].SetActiveRecursively(false);
+	for(var i:int = 1 ; i<=5 ; i++){//forで変数宣言する場合も型付きで宣言する
+	    rikishi[i].SetActiveRecursively(false);
 	}
 
 	Debug.Log("char_select is move OK");
@@ -90,8 +91,6 @@ function Start () {
 }
 //表示されている間繰り返し実行される関数
 function Update () {
-
-	//Destroy(char4.gameObject);
 
 	//■上下の動き
 	//上キー押下
@@ -146,7 +145,7 @@ function select_moves(direction){
 	GameObject.Find("char"+select_No).GetComponent.<MeshRenderer>().material = materials[1];
 
 	//一旦全ての力士を非表示
-	for(i=0 ; i<=5 ; i++){
+	for(var i=0 ; i<=5 ; i++){
 		rikishi[i].SetActiveRecursively(false);
 	}
 	//該当力士表示
@@ -166,7 +165,7 @@ function select_moves(direction){
 function window_change(){
 
 	//ゲーム画面遷移
-	Application.LoadLevel("banduke");
+	Application.LoadLevel("demo");
 
 }
 
