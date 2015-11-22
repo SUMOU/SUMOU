@@ -31,21 +31,24 @@ function Start () {
 //表示されている間繰り返し実行される関数
 function Update () {
 
-	//■スマホがまわしにセットされたら
-	//Enterキー押下
-	if(Input.GetKeyDown(KeyCode.Return)){
-		
-		//効果音再生
-		sound.PlayOneShot(SE_select);
-		
-		//一瞬画面を白くする
-		FadeIn( 1, Color.white );
+}
 
-		//2秒後にfadeOを実行
-		Invoke( "fadeO", 2 );
-		
-	}
+//ゲーム開始
+function GameStart (){
+    
+    //■スマホがまわしにセットされたら
+    if(Input.GetKeyDown(KeyCode.Return)){
+        
+        //効果音再生
+        sound.PlayOneShot(SE_select);
+        
+        //一瞬画面を白くする
+        FadeIn( 1, Color.white );
 
+        //2秒後にfadeOを実行
+        Invoke( "fadeO", 2 );
+        
+    }
 }
 
 

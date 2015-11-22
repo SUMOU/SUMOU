@@ -2,7 +2,7 @@
 
 //ゲーム終了画面オブジェクト
 var end:GameObject;
-var bar;
+var bar:GameObject;	// 久保の変更点③：変数定義時に型付きで定義する
 
 
 //選択された力士番号
