@@ -164,9 +164,11 @@ function select_moves(direction){
 //キャラ選択決定
 function window_change(){
 
+  // 選んだ力士情報をサーバへ送信
+  Application.ExternalCall("rikishi_set", select_No);
+
 	//ゲーム画面遷移
 	Application.LoadLevel("demo");
-
 }
 
 
