@@ -48,6 +48,20 @@ function Update () {
 
 }
 
+function GameStart(){
+    //■スマホがまわしにセットされたら
+        
+    //効果音再生
+    sound.PlayOneShot(SE_select);
+    
+    //一瞬画面を白くする
+    FadeIn( 1, Color.white );
+
+    //2秒後にfadeOを実行
+    Invoke( "fadeO", 2 );
+
+}
+
 
 //画面遷移用フェードアウト
 function fadeO(){
