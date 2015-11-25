@@ -14,6 +14,9 @@ function Update () {
 	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.start") && Input.GetButtonUp("Jump")){
 		//アニメーション:startかつスペースを押したら始まる
 		start = true;
+		
+		// スクショ
+		// Application.CaptureScreenshot("screenshot.png");
 	}
 	else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu") && Input.GetButtonUp("Jump")){
 		harite = true;
