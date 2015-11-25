@@ -14,9 +14,8 @@ var materials:Material[];
 var select_No : int=0;
 
 //勝ち負け true=勝ち
-var result = false;
-var end_flg = false;
-
+var result : boolean=false;
+var end_flg : boolean=false;
 
 function Start () {
 	
