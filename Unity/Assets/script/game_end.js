@@ -29,6 +29,8 @@ function Start () {
 	
 	Debug.Log("game_end is move OK");
 
+	// シーン情報をサーバに送信
+  Application.ExternalCall("setScene", "game_end");
 }
 
 function Update () {

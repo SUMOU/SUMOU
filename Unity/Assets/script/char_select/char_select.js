@@ -91,6 +91,9 @@ function Start () {
 
 	Debug.Log("char_select is move OK");
 
+  // シーン情報をサーバに送信
+  Application.ExternalCall("setScene", "char_select");
+
 }
 
 //表示されている間繰り返し実行される関数
@@ -130,6 +133,8 @@ function window_change(){
 	//ゲーム画面遷移
 	Application.LoadLevel("demo");
 
+  // キャラ選択情報をDBに送信
+  Application.ExternalCall("rikishi_set", select_No);
 }
 
 

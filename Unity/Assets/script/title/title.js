@@ -24,8 +24,10 @@ function Start () {
 	//効果音取得
 	sound = this.gameObject.GetComponent(AudioSource);
 	
-	Debug.Log("title is move OK");	
-	
+	Debug.Log("title is move OK");
+
+    // シーン情報をサーバに送信
+    Application.ExternalCall("setScene", "title");
 }
 
 //表示されている間繰り返し実行される関数
