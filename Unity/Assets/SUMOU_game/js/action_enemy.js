@@ -19,8 +19,8 @@ function Update () {
 		transform.position.x+= 1;
 	}
  
-	anim.SetBool("start",start);
-	anim.SetBool("harite",harite);
+//	anim.SetBool("start",start);
+//	anim.SetBool("harite",harite);
 }
 
 

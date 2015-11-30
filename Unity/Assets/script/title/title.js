@@ -1,4 +1,4 @@
-﻿//#pragma strict
+﻿#pragma strict
 
 /************************
 * フェード イン/アウト
@@ -9,6 +9,10 @@ private var from : Color;
 private var to : Color;
 private var now : Color;
 private var time : float;
+
+//遷移時フェードイン
+FadeOut( 0, Color.black );
+FadeIn( 0.2, Color.black );
 
 
 /**************
