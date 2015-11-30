@@ -77,7 +77,8 @@ function Start () {
 	name_tm.text = names[rikishi_No];
 	
 
-	
+	// シーン情報をサーバに送信
+  Application.ExternalCall("setScene", "game_play");
 	
 }
 
@@ -121,6 +122,8 @@ function Update () {
 
 
 	if(end_flg){
+		// シーン情報をサーバに送信
+  	Application.ExternalCall("setScene", "game_end");
 		//■上下の動き
 		//上キー押下
 		if(Input.GetKeyDown(KeyCode.UpArrow)){

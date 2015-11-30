@@ -31,3 +31,23 @@ function Update () {
 	anim.SetBool("start",start);
 	anim.SetBool("harite",harite);
 }
+
+function harite(){
+	var anim:Animator = GetComponent("Animator");
+	var harite = false;
+	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.start")){
+		//アニメーション:startかつスペースを押したら始まる
+		start = true;
+		
+		// スクショ
+		// Application.CaptureScreenshot("screenshot.png");
+	}
+	else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
+		harite = true;
+		if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
+			//Base Layerのアニメーションsusumuを取得している			
+			transform.position.x -= 1;
+		}
+
+	}
+}
