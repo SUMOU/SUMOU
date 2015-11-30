@@ -52,7 +52,7 @@ function Update () {
 
 
 	//始点位置を変更
-	//cameras.transform.Rotate ( 0, ( Input.GetAxis ( "Horizontal" ) * 1 ), 0 );;
+	//cameras.transform.Rotate ( 0, ( Input.GetAxis ( "Horizontal" ) * 1 ), 0 );
 
 
 
