@@ -1,7 +1,22 @@
-﻿//#pragma strict
+﻿#pragma strict
+
+
+/************************
+* フェード イン/アウト
+************************/
+private var texture : Texture2D;
+private var sequence : String = null;
+private var from : Color;
+private var to : Color;
+private var now : Color; 
+private var time : float;
+
+//遷移時フェードイン
+FadeOut( 0, Color.black );
+FadeIn( 0.7, Color.black );
+
 
 //ゲーム終了画面オブジェクト
-var end:GameObject;
 var bar:GameObject;
 
 
@@ -9,24 +24,28 @@ var bar:GameObject;
 //rikishi_No = PlayerPrefs.GetInt("select_No");
 
 
+//勝ち負け取得　1=勝ち , 0=負け
+var result : int=1;
+
 //文字色変更用
 var materials:Material[];
 var select_No : int=0;
 
-//勝ち負け true=勝ち
-var result : boolean=false;
-var end_flg : boolean=false;
-
 function Start () {
 	
-	end = GameObject.Find("end");
-	bar = GameObject.Find("bar");
-	
-	//ゲーム終了画面非表示（Inspectorのオブジェクト名左のチェックをはずした状態）
-	//SetActiveは該当要素のみ
-	//SetActiveRecursivelyは階層も含めた要素
-	end.SetActiveRecursively(false);
-	
+	//勝ち負け取得
+	if(PlayerPrefs.GetInt("result")){
+		result = PlayerPrefs.GetInt("result");
+	}
+
+	//負けたときの文字
+	if(result == 0){
+		//敗北時用の文字（再挑戦）を取得
+		GameObject.Find("after0").GetComponent.<MeshRenderer>().material = materials[7];
+	}
+
+	bar = GameObject.Find("bar");	
+
 	Debug.Log("game_end is move OK");
 
 	// シーン情報をサーバに送信
@@ -35,38 +54,21 @@ function Start () {
 
 function Update () {
 
-	//ゲーム終了判定
-	//左クリック　勝ち
-	if(Input.GetMouseButtonDown(0) && end_flg == false){
-		//ゲーム終了画面表示
-		end.SetActiveRecursively(true);
-		result = true;
-		end_flg = true;
+	//■上下の動き
+	//上キー押下
+	if(Input.GetKeyDown(KeyCode.UpArrow)){
+		select_moves("up");
 	}
-	//右クリック　負け
-	if(Input.GetMouseButtonDown(1) && end_flg == false){
-		end.SetActiveRecursively(true);
-		GameObject.Find("after0").GetComponent.<MeshRenderer>().material = materials[7];
-		end_flg = true;
+	//下キー押下
+	if(Input.GetKeyDown(KeyCode.DownArrow)){
+		select_moves("down");
 	}
 
-
-	if(end_flg){
-		//■上下の動き
-		//上キー押下
-		if(Input.GetKeyDown(KeyCode.UpArrow)){
-			select_moves("up");
-		}
-		//下キー押下
-		if(Input.GetKeyDown(KeyCode.DownArrow)){
-			select_moves("down");
-		}
-		
-		//■張り手
-		//Enterキー押下
-		if(Input.GetKeyDown(KeyCode.Return)){
-			window_change();
-		}
+	//■張り手
+	//Enterキー押下
+	if(Input.GetKeyDown(KeyCode.Return)){
+		FadeOut( 0.3, Color.black );
+		Invoke( "window_change", 0.3 );	//0.3秒後
 	}
 
 }
@@ -79,7 +81,7 @@ function select_moves(direction){
 	* カーソル変更前色変更
 	************************/
 	//勝敗で表示文字を変更
-	if(result){
+	if(result == 1){
 		//カーソル移動前のマテリアル（選択から外れた文字の色）変更
 		GameObject.Find("after"+select_No).GetComponent.<MeshRenderer>().material = materials[select_No*2];
 	}else{
@@ -122,7 +124,7 @@ function select_moves(direction){
 	/************************
 	* カーソル変更後色変更
 	************************/
-	if(result){
+	if(result == 1){
 		//カーソル移動前のマテリアル（選択から外れた文字の色）変更
 		GameObject.Find("after"+select_No).GetComponent.<MeshRenderer>().material = materials[select_No*2+1];
 	}else{
@@ -144,7 +146,7 @@ function window_change(){
 
 	//画面遷移
 	if(select_No == 0){
-		Application.LoadLevel("banduke");
+		Application.LoadLevel("demo");
 	}
 	else if(select_No == 1){
 		Application.LoadLevel("char_select");
@@ -155,3 +157,52 @@ function window_change(){
 
 }
 
+
+
+/************************
+* フェード イン/アウト
+************************/
+function Awake(){
+    texture = new Texture2D( 1, 1, TextureFormat.ARGB32, false );
+    texture.SetPixel(0,0, Color.white );
+    texture.Apply();
+}
+
+function OnGUI(){
+    if( now.a != 0 ){
+    GUI.color = now;
+    GUI.DrawTexture( Rect( 0, 0, Screen.width, Screen.height ), texture );
+    }
+}
+
+function StartSequence( function_name : String ){
+    if( sequence ){
+    StopCoroutine( sequence );
+    sequence = null;
+    }
+    sequence = function_name;
+    StartCoroutine( sequence );
+}
+
+function FadeUpdate(){
+    var now_time : float = 0;
+    while( 0 < time && now_time < time ){ 
+    now_time += Time.deltaTime;
+    now = Color.Lerp( from, to, now_time / time );
+    yield;
+    }
+    now = to;
+}
+
+function FadeIn( t_time : float, t_color : Color ){
+    to = from = t_color;
+    to.a = 0;
+    time = t_time;
+    StartSequence( "FadeUpdate" );
+}
+function FadeOut( t_time : float , t_color : Color ){
+    to = from = t_color;
+    from.a = 0;
+    time = t_time;
+    StartSequence( "FadeUpdate" );
+}

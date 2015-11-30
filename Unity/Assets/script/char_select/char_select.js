@@ -1,4 +1,4 @@
-﻿//#pragma strict
+﻿#pragma strict
 
 /************************
 * フェード イン/アウト
@@ -17,8 +17,8 @@ FadeIn( 0.7, Color.black );
 /**************
 *  音声宣言
 **************/
-public var sound : AudioSource; //AudioSourceコンポーネント
-public var SE_select : AudioClip;   //音を代入
+public var sound : AudioSource;		//AudioSourceコンポーネント
+public var SE_select : AudioClip;	//音を代入
 
 
 /**************************
@@ -54,7 +54,7 @@ var materials:Material[];
 //選択されているキャラクタと番号（0～5）
 var select_No : int=0;
 
-
+//各力士モデル取得
 var rikishi : GameObject[] = new GameObject[6]; //GameObjectの配列はUnityの組み込み配列を使う
 rikishi[0] = GameObject.Find("rikishi1");
 rikishi[1] = GameObject.Find("rikishi2");
@@ -85,9 +85,9 @@ function Start () {
 	//SetActiveは該当要素のみ
 	//SetActiveRecursivelyは階層も含めた要素
 	for(var i:int = 1 ; i<=5 ; i++){//forで変数宣言する場合も型付きで宣言する
-	    rikishi[i].SetActiveRecursively(false);
+	    rikishi[i].SetActive(false);
 	}
-	rikishi[0].SetActiveRecursively(true);
+	rikishi[0].SetActive(true);
 
 	Debug.Log("char_select is move OK");
 
@@ -123,7 +123,8 @@ function Update () {
 //アニメーションチェンジ
 function animation_change(){
 	rikishi[select_No].GetComponent.<Animator>().runtimeAnimatorController = select_move;
-	Invoke( "window_change", 0.5 );	//0.5秒後
+	FadeOut( 1.2, Color.black );
+	Invoke( "window_change", 1.2 );	//1.2秒後
 }
 
 //■張り手
@@ -174,14 +175,22 @@ function select_moves(direction){
 
 	//一旦全ての力士を非表示
 	for(var i=0 ; i<=5 ; i++){
-		rikishi[i].SetActiveRecursively(false);
+		rikishi[i].SetActive(false);
 	}
 	//該当力士表示
-	rikishi[select_No].SetActiveRecursively(true);
+	rikishi[select_No].SetActive(true);
+	
 	
 	//力士名と詳細情報表示
 	name_tm.text = names[select_No];
 	detail_tm.text = details[select_No];
+
+	//文字数が多い力士はフォントサイズを変える
+	if(select_No == 3){
+		name_tm.fontSize = 40;
+	}else{
+		name_tm.fontSize = 64;
+	}
 
 
 	//次の画面にselect_Noを渡す
