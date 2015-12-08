@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 102982dff125c2c48960e2173f9fae62
+timeCreated: 1448935382
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: abdomen
+    100002: chest
+    100004: head
+    100006: head_end
+    100008: hip
+    100010: lCollar
+    100012: lFoot
+    100014: lFoot_end
+    100016: lForeArm
+    100018: lHand
+    100020: lHand_end
+    100022: lShin
+    100024: lShldr
+    100026: lThigh
+    100028: mage
+    100030: mawasi.001
+    100032: neck
+    100034: rCollar
+    100036: rFoot
+    100038: rFoot_end
+    100040: rForeArm
+    100042: rHand
+    100044: rHand_end
+    100046: rShin
+    100048: rShldr
+    100050: rThigh
+    100052: takanohana
+    100054: //RootNode
+    100056: takanohana:Body
+    100058: takanohana:Body_MeshPart0
+    100060: takanohana:Body_MeshPart1
+    100062: takanohana:Eyebrow012
+    100064: takanohana:Low-Poly
+    100066: takanohana:Teeth_Base
+    100068: takanohana:tongue01
+    400000: abdomen
+    400002: chest
+    400004: head
+    400006: head_end
+    400008: hip
+    400010: lCollar
+    400012: lFoot
+    400014: lFoot_end
+    400016: lForeArm
+    400018: lHand
+    400020: lHand_end
+    400022: lShin
+    400024: lShldr
+    400026: lThigh
+    400028: mage
+    400030: mawasi.001
+    400032: neck
+    400034: rCollar
+    400036: rFoot
+    400038: rFoot_end
+    400040: rForeArm
+    400042: rHand
+    400044: rHand_end
+    400046: rShin
+    400048: rShldr
+    400050: rThigh
+    400052: //RootNode
+    400054: takanohana
+    400056: takanohana:Body
+    400058: takanohana:Body_MeshPart0
+    400060: takanohana:Body_MeshPart1
+    400062: takanohana:Eyebrow012
+    400064: takanohana:Low-Poly
+    400066: takanohana:Teeth_Base
+    400068: takanohana:tongue01
+    4300000: takanohana:tongue01
+    4300002: takanohana:Teeth_Base
+    4300004: takanohana:Eyebrow012
+    4300006: takanohana:Low-Poly
+    4300008: takanohana:Body_MeshPart0
+    4300010: takanohana:Body_MeshPart1
+    4300012: mage
+    4300014: mawasi.001
+    7400000: takanohana|hon_harite
+    7400002: takanohana|hon_harite.001
+    7400004: takanohana|hon_ite1
+    7400006: takanohana|hon_ite2
+    7400008: takanohana|hon_kamae
+    7400010: takanohana|hon_kumi
+    7400012: takanohana|hon_siko
+    7400014: takanohana|hon_start
+    7400016: takanohana|hon_susumu
+    7400018: takanohana|hon_taiki->tyuugosi
+    7400020: mage|hon_taiki->tyuugosi
+    7400022: mawasi.001|hon_kumi
+    9500000: //RootNode
+    13700000: mage
+    13700002: mawasi.001
+    13700004: takanohana:Body_MeshPart0
+    13700006: takanohana:Body_MeshPart1
+    13700008: takanohana:Eyebrow012
+    13700010: takanohana:Low-Poly
+    13700012: takanohana:Teeth_Base
+    13700014: takanohana:tongue01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
