@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: aa26f97e59abdf44e93fe115b178fb50
+timeCreated: 1449044872
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: abdomen
+    100002: chest
+    100004: //RootNode
+    100006: hakuho_base
+    100008: hakuho_base:Body
+    100010: hakuho_base:Body_MeshPart0
+    100012: hakuho_base:Body_MeshPart1
+    100014: hakuho_base:Eyebrow008
+    100016: hakuho_base:Low-Poly
+    100018: hakuho_base:Teeth_Shape05
+    100020: hakuho_base:tongue01
+    100022: head
+    100024: head_end
+    100026: hip
+    100028: Lamp
+    100030: lCollar
+    100032: lFoot
+    100034: lFoot_end
+    100036: lForeArm
+    100038: lHand
+    100040: lHand_end
+    100042: lShin
+    100044: lShldr
+    100046: lThigh
+    100048: mage
+    100050: mawasi.001
+    100052: neck
+    100054: rCollar
+    100056: rFoot
+    100058: rFoot_end
+    100060: rForeArm
+    100062: rHand
+    100064: rHand_end
+    100066: rShin
+    100068: rShldr
+    100070: rThigh
+    400000: abdomen
+    400002: chest
+    400004: //RootNode
+    400006: hakuho_base
+    400008: hakuho_base:Body
+    400010: hakuho_base:Body_MeshPart0
+    400012: hakuho_base:Body_MeshPart1
+    400014: hakuho_base:Eyebrow008
+    400016: hakuho_base:Low-Poly
+    400018: hakuho_base:Teeth_Shape05
+    400020: hakuho_base:tongue01
+    400022: head
+    400024: head_end
+    400026: hip
+    400028: Lamp
+    400030: lCollar
+    400032: lFoot
+    400034: lFoot_end
+    400036: lForeArm
+    400038: lHand
+    400040: lHand_end
+    400042: lShin
+    400044: lShldr
+    400046: lThigh
+    400048: mage
+    400050: mawasi.001
+    400052: neck
+    400054: rCollar
+    400056: rFoot
+    400058: rFoot_end
+    400060: rForeArm
+    400062: rHand
+    400064: rHand_end
+    400066: rShin
+    400068: rShldr
+    400070: rThigh
+    4300000: hakuho_base:tongue01
+    4300002: hakuho_base:Teeth_Shape05
+    4300004: hakuho_base:Eyebrow008
+    4300006: hakuho_base:Low-Poly
+    4300008: hakuho_base:Body_MeshPart0
+    4300010: hakuho_base:Body_MeshPart1
+    4300012: mage
+    4300014: mawasi.001
+    7400000: hakuho_base|hon_harite
+    7400002: hakuho_base|hon_ite1
+    7400004: hakuho_base|hon_ite2
+    7400006: hakuho_base|hon_kamae
+    7400008: hakuho_base|hon_kumi
+    7400010: hakuho_base|hon_kumi.001
+    7400012: hakuho_base|hon_kumi.002
+    7400014: hakuho_base|hon_siko
+    7400016: hakuho_base|hon_start
+    7400018: hakuho_base|hon_susumu
+    7400020: hakuho_base|hon_taiki->tyuugosi
+    7400022: mawasi.001|hon_kumi.001
+    9500000: //RootNode
+    13700000: hakuho_base:Body_MeshPart0
+    13700002: hakuho_base:Body_MeshPart1
+    13700004: hakuho_base:Eyebrow008
+    13700006: hakuho_base:Low-Poly
+    13700008: hakuho_base:Teeth_Shape05
+    13700010: hakuho_base:tongue01
+    13700012: mage
+    13700014: mawasi.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
