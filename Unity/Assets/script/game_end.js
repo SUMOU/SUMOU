@@ -152,6 +152,8 @@ function window_change(){
 		Application.LoadLevel("char_select");
 	}
 	else if(select_No == 2){
+    // 観戦側に情報を発信
+    Application.ExternalCall("gameEnd");
 		Application.LoadLevel("title");
 	}
 

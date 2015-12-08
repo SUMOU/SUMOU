@@ -17,12 +17,16 @@ function Update () {
 		
 		// スクショ
 		// Application.CaptureScreenshot("screenshot.png");
+
+		// 試合時間計測開始
+		Application.ExternalCall("startTimer");
+
 	}
 	else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu") && Input.GetButtonUp("Jump")){
 		harite = true;
 		if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
 			//Base Layerのアニメーションsusumuを取得している			
-			transform.position.x -= 1;
+			transform.position.x += 1;
 		}
 
 	}	
@@ -41,12 +45,15 @@ function harite(){
 		
 		// スクショ
 		// Application.CaptureScreenshot("screenshot.png");
+
+		// 試合時間計測開始
+		Application.ExternalCall("startTimer");
 	}
 	else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
 		harite = true;
 		if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
 			//Base Layerのアニメーションsusumuを取得している			
-			transform.position.x -= 1;
+			transform.position.x += 1;
 		}
 
 	}

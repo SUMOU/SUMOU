@@ -54,7 +54,7 @@ function Update () {
 
 }
 
-function GameStart(){
+function SetPhone(){
     //■スマホがまわしにセットされたら
         
     //効果音再生

@@ -146,6 +146,9 @@ function Start () {
 
 	// シーン情報をサーバに送信
   Application.ExternalCall("setScene", "game_play");
+
+  // 観戦側に情報を発信
+  Application.ExternalCall("gameStart");
 	
 }
 
@@ -219,6 +222,9 @@ function Update () {
 * ゲーム終了　勝ち/負け
 ************************/
 function game_end(){
+
+	// 試合終了時間取得
+	Application.ExternalCall("getTime");
 
 	end_flg = true;	
 	//勝敗モーションセット
@@ -328,4 +334,33 @@ function FadeOut( t_time : float , t_color : Color ){
     from.a = 0;
     time = t_time;
     StartSequence( "FadeUpdate" );
+}
+
+function Zabuton (){
+		Application.ExternalCall("console.log", "座布団！");
+}
+
+/*******************
+* ゲーム終了判定
+*******************/
+//wキー　勝ち
+function Win (){
+	if(end_flg == false){
+		result = 1;
+		//勝利モーション
+		res_move = GameObject.Find("pauseWin").GetComponent.<Animator>().runtimeAnimatorController;
+		game_end();	
+	}
+}
+
+//lキー　負け
+function Lose () {
+	if(end_flg == false){
+		//敗北モーション
+		res_move = GameObject.Find("pauseLose").GetComponent.<Animator>().runtimeAnimatorController;
+		res_mes_tm.text = "敗北";
+		res_user_tm.color =Color.black;
+		res_enemy_tm.color =Color.white;
+		game_end();
+	}
 }
