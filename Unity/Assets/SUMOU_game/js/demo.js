@@ -1,13 +1,16 @@
 ﻿#pragma strict
 
-private var MainCam : Camera;//メインカメラ
-private var FirstCam : Camera;//一人称視点カメラ
-private var MainAudioListener : AudioListener;//よくわからんけど必要みたい？ ないと警告が出る
-private var FirstAudioListener : AudioListener;
+var MainCam : Camera;//メインカメラ
+var FirstCam : Camera;//一人称視点カメラ
+var MainAudioListener : AudioListener;//よくわからんけど必要みたい？ ないと警告が出る
+//var FirstAudioListener : AudioListener;
 
-//勝敗カメラ
+
+/*************
+* 勝敗カメラ
+*************/
 var ResCam:Camera;
-var ResAudioListener : AudioListener;
+//var ResAudioListener : AudioListener;
 var RoteCam:GameObject;
 
 //回転用
@@ -25,15 +28,23 @@ private var texture : Texture2D;
 private var sequence : String = null;
 private var from : Color;
 private var to : Color;
-private var now : Color; 
+private var now : Color;
 private var time : float;
 
 //遷移時フェードイン
 FadeOut( 0, Color.black );
 FadeIn( 0.7, Color.black );
 
+//ゲーム開始時カメラ遷移フラグ
+var cam_flg1 : boolean=false;	//スタート時カメラを下へ動かすアニメーション
+var cam_flg2 : boolean=false;	//スタート時カメラアニメーション全体
+var cam_flg3 : boolean=false;	//力士視点に変更
 
 
+
+/***************
+* 力士名等文字
+***************/
 //力士名設定
 var names = new Array ();
 names[0]="白\n鵬";
@@ -46,20 +57,27 @@ names[5]="貴\n乃\n花";
 //選択された力士番号
 var rikishi_No : int=0;
 
-
-//力士名変更用
+//開始時の力士名（プレイヤー）
 var user_name:GameObject;
-var name_tm:TextMesh;
+var user_name_tm:TextMesh;
+
+//終了後の力士名（プレイヤー）
 var user_name2:GameObject;
-var name_tm2:TextMesh;
+var user_name_tm2:TextMesh;
+
+//開始時の力士名（敵）
+var enemy_name:GameObject;
+var enemy_name_tm:TextMesh;
+
+//終了後の力士名（敵）
+var enemy_name2:GameObject;
+var enemy_name_tm2:TextMesh;
 
 //勝敗
 var res_user:GameObject;
 var res_user_tm:TextMesh;
 var res_enemy:GameObject;
 var res_enemy_tm:TextMesh;
-
-
 
 //勝ち負け 1=勝ち , 0=負け　Booleanだと画面遷移時にデータを渡せない
 var result : int=0;
@@ -69,12 +87,30 @@ var res_mes:GameObject;
 var res_mes_tm:TextMesh;
 
 
-//ゲーム終了判定
-var end_flg : boolean=false;
 
-//力士モデル取得
-var rikishi_user:GameObject;
-var rikishi_enemy:GameObject;
+/****************
+* 敵キャラ用乱数
+****************/
+var r:int;
+var r_loop : boolean=false;
+
+
+
+/****************************
+* 力士モデル/アニメーション
+****************************/
+//力士格納ゲームオブジェクト取得用（初期状態が非アクティブ{非表示}のオブジェクトは親から子の順で取得する）
+var rikishis1:GameObject;
+var rikishis2:GameObject;
+
+//力士モデル取得用
+var user_rikishi : GameObject;
+var enemy_rikishi : GameObject;
+
+//スタート時の四股踏み
+var user_shiko : RuntimeAnimatorController;
+var enemy_shiko : RuntimeAnimatorController;
+
 
 //勝敗のモーション取得
 var res_move : RuntimeAnimatorController;
@@ -83,36 +119,82 @@ var res_move : RuntimeAnimatorController;
 var end1st : boolean=true;
 
 
+
+//ゲーム終了判定
+var end_flg : boolean=false;
+var res_fade1 : boolean=false;	//フェードアウト
+
+
+//紙ふぶき取得
+var kami:GameObject;
+
+
 function Start () {
 	
-	//選択された力士番号
+	/***************
+	* 紙ふぶき取得
+	***************/
+	kami = GameObject.Find("kamifubuki");
+	kami.SetActive(false);
+	
+	
+	/*******************
+	* 自分,敵力士セット
+	*******************/
+	//選択された力士番号取得
 	if(PlayerPrefs.GetInt("select_No")){
-		var rikishi_No = PlayerPrefs.GetInt("select_No");
+		rikishi_No = PlayerPrefs.GetInt("select_No");
+		rikishi_No++;
+	}else{
+		rikishi_No=1;
 	}
 
-	//力士モデル取得
-	rikishi_user = GameObject.Find("rikisi_user");
-	rikishi_enemy = GameObject.Find("rikisi_enemy");
+	//力士格納ゲームオブジェクト取得
+	rikishis1 = GameObject.Find("user");
+	rikishis2 = GameObject.Find("enemy");
 	
+	//選択されたキャラ取得と表示
+	user_rikishi = rikishis1.transform.Find("rikishi"+rikishi_No).gameObject;	
+	user_rikishi.SetActive(true);
+	
+	//敵キャラの決定
+	while(r_loop == false){
+
+		//乱数
+		r = Random.Range(1, 7);
+
+		//プレイヤーと違う力士の場合ループから抜ける
+		if(r != rikishi_No){
+			r_loop = true;
+		}
+		
+	}
+	//敵力士表示
+	enemy_rikishi = rikishis2.transform.Find("rikishi"+r).gameObject;	
+	enemy_rikishi.SetActive(true);
+	
+	//四股アニメーション取得
+	user_shiko = GameObject.Find("shiko"+rikishi_No).GetComponent.<Animator>().runtimeAnimatorController;
+	enemy_shiko = GameObject.Find("shiko"+r).GetComponent.<Animator>().runtimeAnimatorController;
 	
 
+	
 	MainCam = GameObject.Find("Main Camera").GetComponent.<Camera>();
 	FirstCam = GameObject.Find("Camera_FirstPerson").GetComponent.<Camera>();
 	MainAudioListener = GameObject.Find("Main Camera").GetComponent.<AudioListener>();
-	FirstAudioListener = GameObject.Find("Camera_FirstPerson").GetComponent.<AudioListener>();
+	//FirstAudioListener = GameObject.Find("Camera_FirstPerson").GetComponent.<AudioListener>();
 	
 
-	
-
-	//勝敗カメラ回転用要素
+	/***********************
+	* ゲーム後解転用カメラ
+	***********************/
 	RoteCam = GameObject.Find("RoteCameras");
 	
 	//回転用カメラ切り替え用
 	ResCam = GameObject.Find("ResCamera").GetComponent.<Camera>();
-	ResAudioListener = GameObject.Find("ResCamera").GetComponent.<AudioListener>();
+	//ResAudioListener = GameObject.Find("ResCamera").GetComponent.<AudioListener>();
 	ResCam.enabled = false;
-	ResAudioListener.enabled = false;
-
+	//ResAudioListener.enabled = false;
 
 
 	
@@ -121,28 +203,40 @@ function Start () {
 	MainCam.enabled = true;
 	MainAudioListener.enabled = true;
 	FirstCam.enabled = false;
-	FirstAudioListener.enabled = false;
+	//FirstAudioListener.enabled = false;
 	
 	
 	
-	//力士名と勝敗
+	/*****************
+	* 各種メッセージ
+	*****************/
+	//プレイヤー
 	user_name = GameObject.Find("user_name");
-	name_tm = user_name.GetComponent("TextMesh");
-	name_tm.text = names[rikishi_No];
-
+	user_name_tm = user_name.GetComponent("TextMesh");
+	user_name_tm.text = names[rikishi_No-1];
 	user_name2 = GameObject.Find("res_user_name");
-	name_tm2 = user_name2.GetComponent("TextMesh");
-	name_tm2.text = names[rikishi_No];
+	user_name_tm2 = user_name2.GetComponent("TextMesh");
+	user_name_tm2.text = names[rikishi_No-1];
 
+	//敵
+	enemy_name = GameObject.Find("enemy_name");
+	enemy_name_tm = enemy_name.GetComponent("TextMesh");
+	enemy_name_tm.text = names[r-1];
+	enemy_name2 = GameObject.Find("res_enemy_name");
+	enemy_name_tm2 = enemy_name2.GetComponent("TextMesh");
+	enemy_name_tm2.text = names[r-1];
+
+
+	//勝敗（○/●）
 	res_user = GameObject.Find("res_user");
 	res_user_tm = res_user.GetComponent("TextMesh");
 	res_enemy = GameObject.Find("res_enemy");
 	res_enemy_tm = res_enemy.GetComponent("TextMesh");
 
-
-	//負けたときのメッセージ変更用
+	//負けたときのメッセージ変更用（勝利/敗北）
 	res_mes = GameObject.Find("res_mes");
 	res_mes_tm = res_mes.GetComponent("TextMesh");
+
 
 	// シーン情報をサーバに送信
   Application.ExternalCall("setScene", "game_play");
@@ -152,25 +246,51 @@ function Start () {
 	
 }
 
+
+
 function Update () {
 
-	if(transform.position.z <= 7){
-		transform.position.z += 1;
-		// transform.position.z = 7; //期待値z軸25
-	}//徐々に名前が近づいてくる。
+	/*********************
+	* ゲームスタート演出
+	*********************/
+	if(cam_flg2 == false){
+		//文字位置変更
+		if(transform.position.z <= -269){
+			transform.position.z += 1;
+			transform.position.y -= 0.6;
+		}
+		//カメラ位置変更（下へ）
+		if(MainCam.transform.position.y >= 100 && cam_flg1 == false){
+			MainCam.transform.position.y -= 1;
+			MainCam.transform.rotation.x -= 0.0009;
+		}
+		//カメラ位置変更（前へ）
+		else if(MainCam.transform.position.z <= -20){
+			//1回だけモデルを動かす（四股踏み）
+			if(cam_flg1 == false){
+				StartCoroutine("move_model");
+			}
+			cam_flg1 = true;
+			MainCam.transform.position.z += 2.1;
+			MainCam.transform.rotation.x -= 0.00072;
+			MainCam.transform.position.y -= 0.63;
+//			MainCam.transform.position.z += 1.5;
+//			MainCam.transform.rotation.x -= 0.00032;
+//			MainCam.transform.position.y -= 0.44;
+		}else{
+			cam_flg2 = true;
+		}
+	}
 
-	//アニメーション終了時にhakuho・asashoryuが削除される
-	var user_name = gameObject.Find("user_name");
-	var enemy_name = gameObject.Find("enemy_name");
-	Destroy(user_name,10);
-	Destroy(enemy_name,10);
 
-	// アニメーション終了と同時にカメラが切り替わる
-	// Invoke("CamChange",11);
-	
-	
-	
-	
+	/**************************
+	* ゲーム開始直前 視点変更
+	**************************/
+	if(cam_flg2 && cam_flg3 == false){
+		//視点変更
+		StartCoroutine("perspective_change");
+
+	}
 	
 	
 	/*******************
@@ -178,36 +298,41 @@ function Update () {
 	*******************/
 	//左クリック　勝ち
 	if(Input.GetMouseButtonDown(0) && end_flg == false){
+
 		result = 1;
-		//勝利モーション
-		res_move = GameObject.Find("pauseWin").GetComponent.<Animator>().runtimeAnimatorController;
-		game_end();
+		//勝敗フェード呼び出し
+		StartCoroutine("res_fadeOut");
+	
 	}
 	//右クリック　負け
 	if(Input.GetMouseButtonDown(1) && end_flg == false){
-		//敗北モーション
-		res_move = GameObject.Find("pauseLose").GetComponent.<Animator>().runtimeAnimatorController;
+
 		res_mes_tm.text = "敗北";
 		res_user_tm.color =Color.black;
 		res_enemy_tm.color =Color.white;
-		game_end();
+
+		//勝敗フェード呼び出し
+		StartCoroutine("res_fadeOut");
+		
 	}
 
 
-	//勝敗 カメラ回転
+	/******************
+	* 勝敗 カメラ回転
+	******************/
 	if(end_flg && rote_flg == false){
 		//Update関数は1秒毎に実行される
 		timer += Time.deltaTime;	//daltaTime = 前フレームとの差分の秒数
 		
 		//n秒間実行(回転)
-		if(timer < 10.4){
-		   RoteCam.transform.Rotate ( 0, 1.4 , 0 );
+		if(timer < 14){
+		   RoteCam.transform.Rotate ( 0, 0.8 , 0 );
 		}else{
 			rote_flg = true;
 		}
 
 		//画面遷移前のフェードアウト
-		Invoke( "change_fade", 10.4 );
+		Invoke( "change_fade", 14 );
 
 		
 		//アニメーション終了前に遷移する　【Enterキー押下】
@@ -215,6 +340,78 @@ function Update () {
 			change_fade();
 		}
 	}
+
+}
+
+/**************************
+* コルーチン（四股踏み）
+**************************/
+function move_model(): IEnumerator{
+
+	yield  WaitForSeconds(2f);	//2秒後
+	
+	Debug.Log("四股踏み 開始");
+	
+	//アニメーション設定
+	user_rikishi.GetComponent.<Animator>().runtimeAnimatorController = user_shiko;
+
+	yield  WaitForSeconds(0.7f);	//プレイヤーと敵で少し時間を空ける
+	enemy_rikishi.GetComponent.<Animator>().runtimeAnimatorController = enemy_shiko;
+
+}
+
+
+
+/**************************
+* コルーチン（視点変更）
+**************************/
+function perspective_change(): IEnumerator{
+
+	cam_flg3 = true;
+
+	yield  WaitForSeconds(2f);	//2秒待機
+
+	//0.7秒でフェードアウト フェードアウト中(0.4秒)は処理をストップ
+	FadeOut( 0.4, Color.black );
+	yield  WaitForSeconds(0.4f);
+
+	//力士名削除
+	Destroy(user_name);
+	Destroy(enemy_name);
+
+	//カメラ（視点）変更
+	MainCam.enabled = false;
+	MainAudioListener.enabled = false;
+	FirstCam.enabled = true;
+	//FirstAudioListener.enabled = true;
+
+	//0.7秒でフェードイン
+	FadeIn( 0.4, Color.black );
+	yield  WaitForSeconds(1f);
+
+	Debug.Log("視点変更 完了");
+
+}
+
+
+/**********************************
+* コルーチン（勝敗フェードアウト）
+**********************************/
+function res_fadeOut(): IEnumerator{
+
+	Debug.Log("勝敗 画面フェードアウト中…");
+	FadeOut( 0.8, Color.white );
+	yield  WaitForSeconds(0.8f);
+
+	//勝敗モーション
+	if(result == 1){
+		//紙ふぶきを降らせる
+		kami.SetActive(true);
+		res_move = GameObject.Find("pauseWin").GetComponent.<Animator>().runtimeAnimatorController;
+	}else{
+		res_move = GameObject.Find("pauseLose").GetComponent.<Animator>().runtimeAnimatorController;
+	}
+	game_end();
 
 }
 
@@ -227,24 +424,27 @@ function game_end(){
 	Application.ExternalCall("getTime");
 
 	end_flg = true;	
+	
 	//勝敗モーションセット
-	rikishi_user.GetComponent.<Animator>().runtimeAnimatorController = res_move;
+	user_rikishi.GetComponent.<Animator>().runtimeAnimatorController = res_move;
 	
 	//所定の位置と向きに変更
-	rikishi_user.transform.Rotate(0,90,0);
-	rikishi_user.transform.position.x = 30;
-	rikishi_user.transform.position.z = 2;
+	user_rikishi.transform.Rotate(0,90,0);
+	user_rikishi.transform.position.x = 30;
+	user_rikishi.transform.position.z = 2;
 	
 	//カメラ切り替え
 	GameObject.Find("Camera_FirstPerson").SetActive(false);
 	MainCam.enabled = false;
 	MainAudioListener.enabled = false;
 	ResCam.enabled = true;
-	ResAudioListener.enabled = true;
+	//ResAudioListener.enabled = true;
 
 	Destroy(gameObject.Find("user_name"));
 	Destroy(gameObject.Find("enemy_name"));
-	Destroy(rikishi_enemy);
+	Destroy(enemy_rikishi);
+
+	FadeIn( 0.6, Color.white );
 
 }
 
@@ -272,17 +472,6 @@ function window_change(){
 	//ゲーム画面遷移
 	Application.LoadLevel("game_end");
 }
-
-
-
-function CamChange(){
-	MainCam.enabled = false;
-	MainAudioListener.enabled = false;
-	FirstCam.enabled = true;
-	FirstAudioListener.enabled = true;
-}
-
-
 
 
 

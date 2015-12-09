@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 55f4bf3d816bf7d4fb184ebb63d141f4
+timeCreated: 1448935411
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: abdomen
+    100002: chest
+    100004: head
+    100006: head_end
+    100008: hip
+    100010: lCollar
+    100012: lFoot
+    100014: lFoot_end
+    100016: lForeArm
+    100018: lHand
+    100020: lHand_end
+    100022: lShin
+    100024: lShldr
+    100026: lThigh
+    100028: mage
+    100030: mawasi.001
+    100032: neck
+    100034: rCollar
+    100036: rFoot
+    100038: rFoot_end
+    100040: rForeArm
+    100042: rHand
+    100044: rHand_end
+    100046: rShin
+    100048: rShldr
+    100050: rThigh
+    100052: //RootNode
+    100054: tiyonofuzi_base
+    100056: tiyonofuzi_base:Body
+    100058: tiyonofuzi_base:Body_MeshPart0
+    100060: tiyonofuzi_base:Body_MeshPart1
+    100062: tiyonofuzi_base:Eyebrow008
+    100064: tiyonofuzi_base:Low-Poly
+    100066: tiyonofuzi_base:Teeth_Shape05
+    100068: tiyonofuzi_base:tongue01
+    400000: abdomen
+    400002: chest
+    400004: head
+    400006: head_end
+    400008: hip
+    400010: lCollar
+    400012: lFoot
+    400014: lFoot_end
+    400016: lForeArm
+    400018: lHand
+    400020: lHand_end
+    400022: lShin
+    400024: lShldr
+    400026: lThigh
+    400028: mage
+    400030: mawasi.001
+    400032: neck
+    400034: rCollar
+    400036: rFoot
+    400038: rFoot_end
+    400040: rForeArm
+    400042: rHand
+    400044: rHand_end
+    400046: rShin
+    400048: rShldr
+    400050: rThigh
+    400052: //RootNode
+    400054: tiyonofuzi_base
+    400056: tiyonofuzi_base:Body
+    400058: tiyonofuzi_base:Body_MeshPart0
+    400060: tiyonofuzi_base:Body_MeshPart1
+    400062: tiyonofuzi_base:Eyebrow008
+    400064: tiyonofuzi_base:Low-Poly
+    400066: tiyonofuzi_base:Teeth_Shape05
+    400068: tiyonofuzi_base:tongue01
+    4300000: tiyonofuzi_base:tongue01
+    4300002: tiyonofuzi_base:Teeth_Shape05
+    4300004: tiyonofuzi_base:Eyebrow008
+    4300006: tiyonofuzi_base:Low-Poly
+    4300008: tiyonofuzi_base:Body_MeshPart0
+    4300010: tiyonofuzi_base:Body_MeshPart1
+    4300012: mage
+    4300014: mawasi.001
+    7400000: hon_harite
+    7400002: tiyonofuzi_base|hon_harite
+    7400004: tiyonofuzi_base|hon_ite1
+    7400006: tiyonofuzi_base|hon_ite2
+    7400008: tiyonofuzi_base|hon_kamae
+    7400010: tiyonofuzi_base|hon_kumi
+    7400012: tiyonofuzi_base|hon_siko
+    7400014: tiyonofuzi_base|hon_start
+    7400016: tiyonofuzi_base|hon_susumu
+    7400018: tiyonofuzi_base|hon_taiki->tyuugosi
+    7400020: mage|hon_susumu
+    7400022: mawasi.001|hon_taiki->tyuugosi
+    9500000: //RootNode
+    13700000: mage
+    13700002: mawasi.001
+    13700004: tiyonofuzi_base:Body_MeshPart0
+    13700006: tiyonofuzi_base:Body_MeshPart1
+    13700008: tiyonofuzi_base:Eyebrow008
+    13700010: tiyonofuzi_base:Low-Poly
+    13700012: tiyonofuzi_base:Teeth_Shape05
+    13700014: tiyonofuzi_base:tongue01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -29,6 +29,10 @@ var rikishi_detail:GameObject;
 var name_tm:TextMesh;
 var detail_tm:TextMesh;
 
+//力士画像
+var d_img:GameObject;
+var img_box:GameObject;
+
 //キャラ名
 var names = new Array ();
 names[0]="白\n鵬";
@@ -54,14 +58,13 @@ var materials:Material[];
 //選択されているキャラクタと番号（0～5）
 var select_No : int=0;
 
-//各力士モデル取得
+
+//力士格納ゲームオブジェクト取得用（初期状態が非アクティブ{非表示}のオブジェクトは親から子の順で取得する）
+var rikishis:GameObject;
+
+//力士モデル取得用
 var rikishi : GameObject[] = new GameObject[6]; //GameObjectの配列はUnityの組み込み配列を使う
-rikishi[0] = GameObject.Find("rikishi1");
-rikishi[1] = GameObject.Find("rikishi2");
-rikishi[2] = GameObject.Find("rikishi3");
-rikishi[3] = GameObject.Find("rikishi4");
-rikishi[4] = GameObject.Find("rikishi5");
-rikishi[5] = GameObject.Find("rikishi6");
+
 
 
 //力士選択後のモーション取得
@@ -71,7 +74,7 @@ select_move = GameObject.Find("move1").GetComponent.<Animator>().runtimeAnimator
 
 //最初の1回実行される関数
 function Start () {
-	
+
 	//効果音取得
 	sound = this.gameObject.GetComponent(AudioSource);
 	
@@ -80,13 +83,23 @@ function Start () {
 	rikishi_detail = GameObject.Find("rikishi_detail");
 	name_tm = rikishi_name.GetComponent("TextMesh");
 	detail_tm = rikishi_detail.GetComponent("TextMesh");
+
+	//格納された画像取得
+	d_img = GameObject.Find("rikishi_image");
+	img_box = GameObject.Find("detail_image_box");
+
+
+	//力士格納ゲームオブジェクト取得
+	rikishis = GameObject.Find("rikishis");
 	
-	//力士2以降非表示（Inspectorのオブジェクト名左のチェックをはずした状態）
-	//SetActiveは該当要素のみ
-	//SetActiveRecursivelyは階層も含めた要素
-	for(var i:int = 1 ; i<=5 ; i++){//forで変数宣言する場合も型付きで宣言する
-	    rikishi[i].SetActive(false);
+	//iより1多い変数（i+1での取得は上手くいかない）
+	var i1:int=1;
+	//力士取得
+	for(var i:int=0 ; i<=5 ; i++){
+		rikishi[i] = rikishis.transform.Find("rikishi"+i1).gameObject;
+		i1++;
 	}
+
 	rikishi[0].SetActive(true);
 
 	Debug.Log("char_select is move OK");
@@ -135,6 +148,9 @@ function animation_change(){
 //キャラ選択決定
 function window_change(){
 
+	//次の画面にselect_Noを渡す
+	PlayerPrefs.SetInt("select_No", select_No);
+
 	//ゲーム画面遷移
 	Application.LoadLevel("demo");
 
@@ -178,28 +194,27 @@ function select_moves(direction){
 	GameObject.Find("char"+select_No).GetComponent.<MeshRenderer>().material = materials[1];
 
 	//一旦全ての力士を非表示
-	for(var i=0 ; i<=5 ; i++){
+	for(var i:int = 0 ; i<=5 ; i++){
 		rikishi[i].SetActive(false);
 	}
 	//該当力士表示
 	rikishi[select_No].SetActive(true);
 	
+	//画像変更
+	d_img.GetComponent.<MeshRenderer>().material = img_box.GetComponent.<MeshRenderer>().materials[select_No];
+
 	
 	//力士名と詳細情報表示
 	name_tm.text = names[select_No];
 	detail_tm.text = details[select_No];
 
-	//文字数が多い力士はフォントサイズを変える
+	//文字数が多い力士はフォントサイズを変更
 	if(select_No == 3){
-		name_tm.fontSize = 40;
+		name_tm.fontSize = 84;
 	}else{
-		name_tm.fontSize = 64;
+		name_tm.fontSize = 120;
 	}
 
-
-	//次の画面にselect_Noを渡す
-	//この関数外で使用すると値が正常に渡せない
-	PlayerPrefs.SetInt("select_No", select_No);
 }
 
 
