@@ -349,7 +349,8 @@ function Win (){
 		result = 1;
 		//勝利モーション
 		res_move = GameObject.Find("pauseWin").GetComponent.<Animator>().runtimeAnimatorController;
-		game_end();	
+		Application.ExternalEval("win_num++");
+		game_end();
 	}
 }
 
