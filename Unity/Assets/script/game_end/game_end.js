@@ -57,6 +57,8 @@ function Start () {
 
 	Debug.Log("game_end is move OK");
 
+  // シーン情報をサーバに送信
+  Application.ExternalCall("setScene", "game_end");
 }
 
 function Update () {
@@ -158,6 +160,8 @@ function window_change(){
 		Application.LoadLevel("char_select");
 	}
 	else if(select_No == 2){
+    // 観戦側に情報を発信
+    Application.ExternalCall("gameEnd");
 		Application.LoadLevel("title");
 	}
 

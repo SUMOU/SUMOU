@@ -10,7 +10,7 @@ function Update () {
 	var anim:Animator = GetComponent("Animator");
 	var harite = false;//攻撃のループ用
 	
-	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.start") && Input.GetButtonUp("Jump")){
+	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kamae") && Input.GetButtonUp("Jump")){
 		//アニメーション:startかつスペースを押したら始まる
 		start = true;
 	}
@@ -37,3 +37,26 @@ function OnCollisionEnter(obj:Collision){
 	// }
 	
 }
+
+// function harite(){
+// 	var anim:Animator = GetComponent("Animator");
+// 	var harite = false;
+// 	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.start")){
+// 		//アニメーション:startかつスペースを押したら始まる
+// 		start = true;
+		
+// 		// スクショ
+// 		// Application.CaptureScreenshot("screenshot.png");
+// 		Debug.Log("試合時間計測開始fromUnity");
+// 		// 試合時間計測開始
+// 		Application.ExternalCall("startTimer");
+// 	}
+// 	else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
+// 		harite = true;
+// 		if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
+// 			//Base Layerのアニメーションsusumuを取得している			
+// 			transform.position.x += 1;
+// 		}
+
+// 	}
+// }

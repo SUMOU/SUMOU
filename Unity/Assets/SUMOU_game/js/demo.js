@@ -156,6 +156,8 @@ function Start () {
 	//選択されたキャラ取得と表示
 	user_rikishi = rikishis1.transform.Find("rikishi"+rikishi_No).gameObject;	
 	user_rikishi.SetActive(true);
+	// 選ばれた力士にスクリプトを当てる
+	user_rikishi.AddComponent.<action_user>();
 	
 	//敵キャラの決定
 	while(r_loop == false){
@@ -172,6 +174,8 @@ function Start () {
 	//敵力士表示
 	enemy_rikishi = rikishis2.transform.Find("rikishi"+r).gameObject;	
 	enemy_rikishi.SetActive(true);
+	// 選ばれた力士にスクリプトを当てる
+	enemy_rikishi.AddComponent.<action_enemy>();
 	
 	//四股アニメーション取得
 	user_shiko = GameObject.Find("shiko"+rikishi_No).GetComponent.<Animator>().runtimeAnimatorController;
@@ -536,21 +540,20 @@ function Zabuton (){
 function Win (){
 	if(end_flg == false){
 		result = 1;
-		//勝利モーション
-		res_move = GameObject.Find("pauseWin").GetComponent.<Animator>().runtimeAnimatorController;
 		Application.ExternalEval("win_num++");
-		game_end();
+		//勝敗フェード呼び出し
+		StartCoroutine("res_fadeOut");
 	}
 }
 
 //lキー　負け
 function Lose () {
 	if(end_flg == false){
-		//敗北モーション
-		res_move = GameObject.Find("pauseLose").GetComponent.<Animator>().runtimeAnimatorController;
 		res_mes_tm.text = "敗北";
 		res_user_tm.color =Color.black;
 		res_enemy_tm.color =Color.white;
-		game_end();
+
+		//勝敗フェード呼び出し
+		StartCoroutine("res_fadeOut");
 	}
 }

@@ -11,15 +11,18 @@ var start = false;
 function Update () {
 	var anim:Animator = GetComponent("Animator");
 	var harite = false;
-	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.start") && Input.GetButtonUp("Jump")){
+	if(Input.GetButtonUp("Jump")){
+		Debug.Log(anim.GetCurrentAnimatorStateInfo(0));
+	}
+
+	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kamae") && Input.GetButtonUp("Jump")){
+		// 試合時間計測開始
+		if(!start) Application.ExternalCall("startTimer");
 		//アニメーション:startかつスペースを押したら始まる
 		start = true;
 		
 		// スクショ
 		// Application.CaptureScreenshot("screenshot.png");
-
-		// 試合時間計測開始
-		Application.ExternalCall("startTimer");
 
 	}
 	else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu") && Input.GetButtonUp("Jump")){
@@ -39,15 +42,16 @@ function Update () {
 function harite(){
 	var anim:Animator = GetComponent("Animator");
 	var harite = false;
-	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.start")){
+	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kamae")){
+		// 試合時間計測開始
+		if(!start) Application.ExternalCall("startTimer");
+
 		//アニメーション:startかつスペースを押したら始まる
 		start = true;
 		
 		// スクショ
 		// Application.CaptureScreenshot("screenshot.png");
 
-		// 試合時間計測開始
-		Application.ExternalCall("startTimer");
 	}
 	else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.susumu")){
 		harite = true;
