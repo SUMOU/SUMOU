@@ -1,0 +1,3354 @@
+fileFormatVersion: 2
+guid: 2413877f7d3cc1d41b0b0074c7f53248
+timeCreated: 1449995044
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: asa_atari-migi
+    100004: asa_atari_migi
+    100006: asa_base_2
+    100008: asa_base_2:Body
+    100010: asa_base_2:Body_MeshPart0
+    100012: asa_base_2:Body_MeshPart1
+    100014: asa_base_2:Eyebrow012
+    100016: asa_base_2:HighPolyEyes
+    100018: asa_base_2:Teeth_Shape05
+    100020: asa_base_2:tongue01
+    100022: asa_base_weir
+    100024: asa_haigo_obj
+    100026: asa_mage
+    100028: asa_maru_hidari
+    100030: asa_maru_migi
+    100032: asa_mawasi
+    100034: chest
+    100036: chest-1
+    100038: f_index.01.L
+    100040: f_index.01.R
+    100042: f_index.02.L
+    100044: f_index.02.R
+    100046: f_index.03.L
+    100048: f_index.03.L_end
+    100050: f_index.03.R
+    100052: f_index.03.R_end
+    100054: f_middle.01.L
+    100056: f_middle.01.R
+    100058: f_middle.02.L
+    100060: f_middle.02.R
+    100062: f_middle.03.L
+    100064: f_middle.03.L_end
+    100066: f_middle.03.R
+    100068: f_middle.03.R_end
+    100070: f_pinky.01.L
+    100072: f_pinky.01.R
+    100074: f_pinky.02.L
+    100076: f_pinky.02.R
+    100078: f_pinky.03.L
+    100080: f_pinky.03.L_end
+    100082: f_pinky.03.R
+    100084: f_pinky.03.R_end
+    100086: f_ring.01.L
+    100088: f_ring.01.R
+    100090: f_ring.02.L
+    100092: f_ring.02.R
+    100094: f_ring.03.L
+    100096: f_ring.03.L_end
+    100098: f_ring.03.R
+    100100: f_ring.03.R_end
+    100102: foot.L
+    100104: foot.R
+    100106: forearm.L
+    100108: forearm.R
+    100110: hand.L
+    100112: hand.R
+    100114: head
+    100116: head_end
+    100118: hips
+    100120: neck
+    100122: shin.L
+    100124: shin.R
+    100126: shoulder.L
+    100128: shoulder.R
+    100130: spine
+    100132: thigh.L
+    100134: thigh.R
+    100136: thumb.01.L
+    100138: thumb.01.R
+    100140: thumb.02.L
+    100142: thumb.02.R
+    100144: thumb.03.L
+    100146: thumb.03.L_end
+    100148: thumb.03.R
+    100150: thumb.03.R_end
+    100152: toe.L
+    100154: toe.L_end
+    100156: toe.R
+    100158: toe.R_end
+    100160: upper_arm.L
+    100162: upper_arm.R
+    100164: "\u30D8\u30DF"
+    400000: //RootNode
+    400002: asa_atari-migi
+    400004: asa_atari_migi
+    400006: asa_base_2
+    400008: asa_base_2:Body
+    400010: asa_base_2:Body_MeshPart0
+    400012: asa_base_2:Body_MeshPart1
+    400014: asa_base_2:Eyebrow012
+    400016: asa_base_2:HighPolyEyes
+    400018: asa_base_2:Teeth_Shape05
+    400020: asa_base_2:tongue01
+    400022: asa_base_weir
+    400024: asa_haigo_obj
+    400026: asa_mage
+    400028: asa_maru_hidari
+    400030: asa_maru_migi
+    400032: asa_mawasi
+    400034: chest
+    400036: chest-1
+    400038: f_index.01.L
+    400040: f_index.01.R
+    400042: f_index.02.L
+    400044: f_index.02.R
+    400046: f_index.03.L
+    400048: f_index.03.L_end
+    400050: f_index.03.R
+    400052: f_index.03.R_end
+    400054: f_middle.01.L
+    400056: f_middle.01.R
+    400058: f_middle.02.L
+    400060: f_middle.02.R
+    400062: f_middle.03.L
+    400064: f_middle.03.L_end
+    400066: f_middle.03.R
+    400068: f_middle.03.R_end
+    400070: f_pinky.01.L
+    400072: f_pinky.01.R
+    400074: f_pinky.02.L
+    400076: f_pinky.02.R
+    400078: f_pinky.03.L
+    400080: f_pinky.03.L_end
+    400082: f_pinky.03.R
+    400084: f_pinky.03.R_end
+    400086: f_ring.01.L
+    400088: f_ring.01.R
+    400090: f_ring.02.L
+    400092: f_ring.02.R
+    400094: f_ring.03.L
+    400096: f_ring.03.L_end
+    400098: f_ring.03.R
+    400100: f_ring.03.R_end
+    400102: foot.L
+    400104: foot.R
+    400106: forearm.L
+    400108: forearm.R
+    400110: hand.L
+    400112: hand.R
+    400114: head
+    400116: head_end
+    400118: hips
+    400120: neck
+    400122: shin.L
+    400124: shin.R
+    400126: shoulder.L
+    400128: shoulder.R
+    400130: spine
+    400132: thigh.L
+    400134: thigh.R
+    400136: thumb.01.L
+    400138: thumb.01.R
+    400140: thumb.02.L
+    400142: thumb.02.R
+    400144: thumb.03.L
+    400146: thumb.03.L_end
+    400148: thumb.03.R
+    400150: thumb.03.R_end
+    400152: toe.L
+    400154: toe.L_end
+    400156: toe.R
+    400158: toe.R_end
+    400160: upper_arm.L
+    400162: upper_arm.R
+    400164: "\u30D8\u30DF"
+    4300000: asa_base_2:tongue01
+    4300002: asa_base_2:Teeth_Shape05
+    4300004: asa_base_2:Eyebrow012
+    4300006: asa_base_2:HighPolyEyes
+    4300008: asa_base_2:Body_MeshPart0
+    4300010: asa_base_2:Body_MeshPart1
+    4300012: asa_atari-migi
+    4300014: asa_atari_migi
+    4300016: asa_base_weir
+    4300018: asa_haigo_obj
+    4300020: asa_mage
+    4300022: asa_maru_hidari
+    4300024: asa_maru_migi
+    4300026: asa_mawasi
+    7400000: asa_base_2|01_tati_
+    7400002: asa_base_2|02_youi
+    7400004: asa_base_2|03_tyugosi
+    7400006: asa_base_2|04_siko
+    7400008: asa_base_2|05_zyunbi
+    7400010: asa_base_2|06_kamae
+    7400012: asa_base_2|07_kaisi
+    7400014: asa_base_2|08_taiki
+    7400016: asa_base_2|09_harite
+    7400018: asa_base_2|10_itai-hidari
+    7400020: asa_base_2|11_itai-migi
+    7400022: asa_base_2|12_yorokobi
+    7400024: asa_base_2|13_kuyasi
+    7400026: asa_base_2|14_doya
+    7400028: asa_base_2|15_kiai
+    7400030: asa_mawasi|02_youi
+    9500000: //RootNode
+    13700000: asa_atari-migi
+    13700002: asa_atari_migi
+    13700004: asa_base_2:Body_MeshPart0
+    13700006: asa_base_2:Body_MeshPart1
+    13700008: asa_base_2:Eyebrow012
+    13700010: asa_base_2:HighPolyEyes
+    13700012: asa_base_2:Teeth_Shape05
+    13700014: asa_base_2:tongue01
+    13700016: asa_base_weir
+    13700018: asa_haigo_obj
+    13700020: asa_mage
+    13700022: asa_maru_hidari
+    13700024: asa_maru_migi
+    13700026: asa_mawasi
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: asa_base_2|01_tati_
+      takeName: asa_base_2|01_tati_
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|02_youi
+      takeName: asa_base_2|02_youi
+      firstFrame: 0
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|03_tyugosi
+      takeName: asa_base_2|03_tyugosi
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|04_siko
+      takeName: asa_base_2|04_siko
+      firstFrame: 0
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|05_zyunbi
+      takeName: asa_base_2|05_zyunbi
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|06_kamae
+      takeName: asa_base_2|06_kamae
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|07_kaisi
+      takeName: asa_base_2|07_kaisi
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|08_taiki
+      takeName: asa_base_2|08_taiki
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|09_harite
+      takeName: asa_base_2|09_harite
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|10_itai-hidari
+      takeName: asa_base_2|10_itai-hidari
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|11_itai-migi
+      takeName: asa_base_2|11_itai-migi
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|12_yorokobi
+      takeName: asa_base_2|12_yorokobi
+      firstFrame: 0
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|13_kuyasi
+      takeName: asa_base_2|13_kuyasi
+      firstFrame: 0
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|14_doya
+      takeName: asa_base_2|14_doya
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_base_2|15_kiai
+      takeName: asa_base_2|15_kiai
+      firstFrame: 0
+      lastFrame: 117
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: asa_mawasi|02_youi
+      takeName: asa_mawasi|02_youi
+      firstFrame: 0
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: asa_atari-migi
+        weight: 1
+      - path: asa_atari_migi
+        weight: 1
+      - path: asa_base_2
+        weight: 1
+      - path: asa_base_2/hips
+        weight: 1
+      - path: asa_base_2/hips/spine
+        weight: 1
+      - path: asa_base_2/hips/spine/chest
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/neck/head/head_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_pinky.01.L/f_pinky.02.L/f_pinky.03.L/f_pinky.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.L/upper_arm.L/forearm.L/hand.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_pinky.01.R/f_pinky.02.R/f_pinky.03.R/f_pinky.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: asa_base_2/hips/spine/chest/chest-1/shoulder.R/upper_arm.R/forearm.R/hand.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L
+        weight: 1
+      - path: asa_base_2/hips/thigh.L/shin.L/foot.L/toe.L/toe.L_end
+        weight: 1
+      - path: asa_base_2/hips/thigh.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R
+        weight: 1
+      - path: asa_base_2/hips/thigh.R/shin.R/foot.R/toe.R/toe.R_end
+        weight: 1
+      - path: asa_base_2:Body
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart0
+        weight: 1
+      - path: asa_base_2:Body/asa_base_2:Body_MeshPart1
+        weight: 1
+      - path: asa_base_2:Eyebrow012
+        weight: 1
+      - path: asa_base_2:HighPolyEyes
+        weight: 1
+      - path: asa_base_2:Teeth_Shape05
+        weight: 1
+      - path: asa_base_2:tongue01
+        weight: 1
+      - path: asa_base_weir
+        weight: 1
+      - path: asa_haigo_obj
+        weight: 1
+      - path: asa_mage
+        weight: 1
+      - path: asa_maru_hidari
+        weight: 1
+      - path: asa_maru_migi
+        weight: 1
+      - path: asa_mawasi
+        weight: 1
+      - path: "\u30D8\u30DF"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
