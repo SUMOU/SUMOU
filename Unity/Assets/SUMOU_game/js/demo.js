@@ -3,14 +3,22 @@
 var MainCam : Camera;//メインカメラ
 var FirstCam : Camera;//一人称視点カメラ
 var MainAudioListener : AudioListener;//よくわからんけど必要みたい？ ないと警告が出る
-//var FirstAudioListener : AudioListener;
+var FirstAudioListener : AudioListener;
+
+
+/**************
+*  音声宣言
+**************/
+public var sound1 : AudioSource;	//AudioSourceコンポーネント
+public var SE_taiko : AudioClip;	//音を代入
+
 
 
 /*************
 * 勝敗カメラ
 *************/
 var ResCam:Camera;
-//var ResAudioListener : AudioListener;
+var ResAudioListener : AudioListener;
 var RoteCam:GameObject;
 
 //回転用
@@ -33,7 +41,7 @@ private var time : float;
 
 //遷移時フェードイン
 FadeOut( 0, Color.black );
-FadeIn( 0.7, Color.black );
+FadeIn( 0.5, Color.black );
 
 //ゲーム開始時カメラ遷移フラグ
 var cam_flg1 : boolean=false;	//スタート時カメラを下へ動かすアニメーション
@@ -107,13 +115,9 @@ var rikishis2:GameObject;
 var user_rikishi : GameObject;
 var enemy_rikishi : GameObject;
 
-//スタート時の四股踏み
-var user_shiko : RuntimeAnimatorController;
-var enemy_shiko : RuntimeAnimatorController;
-
 
 //勝敗のモーション取得
-var res_move : RuntimeAnimatorController;
+//var res_move : RuntimeAnimatorController;
 
 //回転アニメーション終了後 chage_fadeが呼び出され続けるのを防ぐ
 var end1st : boolean=true;
@@ -130,6 +134,11 @@ var kami:GameObject;
 
 
 function Start () {
+	
+	
+	//太鼓効果音取得
+	sound1 = this.gameObject.GetComponent(AudioSource);
+
 	
 	/***************
 	* 紙ふぶき取得
@@ -174,27 +183,27 @@ function Start () {
 	enemy_rikishi.SetActive(true);
 	
 	//四股アニメーション取得
-	user_shiko = GameObject.Find("shiko"+rikishi_No).GetComponent.<Animator>().runtimeAnimatorController;
-	enemy_shiko = GameObject.Find("shiko"+r).GetComponent.<Animator>().runtimeAnimatorController;
+	//user_shiko = GameObject.Find("shiko"+rikishi_No).GetComponent.<Animator>().runtimeAnimatorController;
+	//enemy_shiko = GameObject.Find("shiko"+r).GetComponent.<Animator>().runtimeAnimatorController;
 	
 
 	
 	MainCam = GameObject.Find("Main Camera").GetComponent.<Camera>();
 	FirstCam = GameObject.Find("Camera_FirstPerson").GetComponent.<Camera>();
 	MainAudioListener = GameObject.Find("Main Camera").GetComponent.<AudioListener>();
-	//FirstAudioListener = GameObject.Find("Camera_FirstPerson").GetComponent.<AudioListener>();
+	FirstAudioListener = GameObject.Find("Camera_FirstPerson").GetComponent.<AudioListener>();
 	
 
 	/***********************
-	* ゲーム後解転用カメラ
+	* ゲーム後回転用カメラ
 	***********************/
 	RoteCam = GameObject.Find("RoteCameras");
 	
 	//回転用カメラ切り替え用
 	ResCam = GameObject.Find("ResCamera").GetComponent.<Camera>();
-	//ResAudioListener = GameObject.Find("ResCamera").GetComponent.<AudioListener>();
+	ResAudioListener = GameObject.Find("ResCamera").GetComponent.<AudioListener>();
 	ResCam.enabled = false;
-	//ResAudioListener.enabled = false;
+	ResAudioListener.enabled = false;
 
 
 	
@@ -203,7 +212,7 @@ function Start () {
 	MainCam.enabled = true;
 	MainAudioListener.enabled = true;
 	FirstCam.enabled = false;
-	//FirstAudioListener.enabled = false;
+	FirstAudioListener.enabled = false;
 	
 	
 	
@@ -237,12 +246,33 @@ function Start () {
 	res_mes = GameObject.Find("res_mes");
 	res_mes_tm = res_mes.GetComponent("TextMesh");
 
-	
 }
 
 
 
 function Update () {
+
+//それぞれのキーで動く
+/*
+	if(Input.GetKeyDown(KeyCode.Q)){
+		hakuho.GetComponent(Animator).SetBool("kiai", true);
+	}
+	if(Input.GetKeyDown(KeyCode.W)){
+		hakuho.GetComponent(Animator).SetBool("shiko", true);
+	}
+	if(Input.GetKeyDown(KeyCode.E)){
+		hakuho.GetComponent(Animator).SetBool("junnbi", true);
+	}
+	if(Input.GetKeyDown(KeyCode.R)){
+		hakuho.GetComponent(Animator).SetBool("kamae", true);
+	}
+*/
+
+
+
+
+
+
 
 	/*********************
 	* ゲームスタート演出
@@ -252,25 +282,33 @@ function Update () {
 		if(transform.position.z <= -269){
 			transform.position.z += 1;
 			transform.position.y -= 0.6;
+			if(transform.position.z >= -274 && transform.position.z <= -273){
+				//効果音再生
+				sound1.PlayOneShot(SE_taiko);
+			}
 		}
 		//カメラ位置変更（下へ）
 		if(MainCam.transform.position.y >= 100 && cam_flg1 == false){
-			MainCam.transform.position.y -= 1;
-			MainCam.transform.rotation.x -= 0.0009;
+			MainCam.transform.position.y -= 0.4;
+			MainCam.transform.rotation.x -= 0.00035;
+//			MainCam.transform.position.y -= 0.8;
+//			MainCam.transform.rotation.x -= 0.0007;
 		}
 		//カメラ位置変更（前へ）
 		else if(MainCam.transform.position.z <= -20){
-			//1回だけモデルを動かす（四股踏み）
+			//モデルを動かす
 			if(cam_flg1 == false){
-				StartCoroutine("move_model");
+//				StartCoroutine("move_model");
+				user_rikishi.GetComponent(Animator).SetBool("kiai", true);
+				enemy_rikishi.GetComponent(Animator).SetBool("kiai", true);
 			}
 			cam_flg1 = true;
-			MainCam.transform.position.z += 2.1;
-			MainCam.transform.rotation.x -= 0.00072;
-			MainCam.transform.position.y -= 0.63;
-//			MainCam.transform.position.z += 1.5;
-//			MainCam.transform.rotation.x -= 0.00032;
-//			MainCam.transform.position.y -= 0.44;
+//			MainCam.transform.position.z += 2.1;
+//			MainCam.transform.rotation.x -= 0.00072;
+//			MainCam.transform.position.y -= 0.63;
+			MainCam.transform.position.z += 0.75;
+			MainCam.transform.rotation.x -= 0.00016;
+			MainCam.transform.position.y -= 0.22;
 		}else{
 			cam_flg2 = true;
 		}
@@ -320,7 +358,7 @@ function Update () {
 		
 		//n秒間実行(回転)
 		if(timer < 14){
-		   RoteCam.transform.Rotate ( 0, 0.8 , 0 );
+		   RoteCam.transform.Rotate ( 0, 0.25 , 0 );
 		}else{
 			rote_flg = true;
 		}
@@ -337,24 +375,6 @@ function Update () {
 
 }
 
-/**************************
-* コルーチン（四股踏み）
-**************************/
-function move_model(): IEnumerator{
-
-	yield  WaitForSeconds(2f);	//2秒後
-	
-	Debug.Log("四股踏み 開始");
-	
-	//アニメーション設定
-	user_rikishi.GetComponent.<Animator>().runtimeAnimatorController = user_shiko;
-
-	yield  WaitForSeconds(0.7f);	//プレイヤーと敵で少し時間を空ける
-	enemy_rikishi.GetComponent.<Animator>().runtimeAnimatorController = enemy_shiko;
-
-}
-
-
 
 /**************************
 * コルーチン（視点変更）
@@ -366,8 +386,8 @@ function perspective_change(): IEnumerator{
 	yield  WaitForSeconds(2f);	//2秒待機
 
 	//0.7秒でフェードアウト フェードアウト中(0.4秒)は処理をストップ
-	FadeOut( 0.4, Color.black );
-	yield  WaitForSeconds(0.4f);
+	FadeOut( 0.3, Color.black );
+	yield  WaitForSeconds(0.3f);
 
 	//力士名削除
 	Destroy(user_name);
@@ -377,10 +397,9 @@ function perspective_change(): IEnumerator{
 	MainCam.enabled = false;
 	MainAudioListener.enabled = false;
 	FirstCam.enabled = true;
-	//FirstAudioListener.enabled = true;
+	FirstAudioListener.enabled = true;
 
-	//0.7秒でフェードイン
-	FadeIn( 0.4, Color.black );
+	FadeIn( 0.3, Color.black );
 	yield  WaitForSeconds(1f);
 
 	Debug.Log("視点変更 完了");
@@ -394,16 +413,19 @@ function perspective_change(): IEnumerator{
 function res_fadeOut(): IEnumerator{
 
 	Debug.Log("勝敗 画面フェードアウト中…");
-	FadeOut( 0.8, Color.white );
+	FadeOut( 0.6, Color.white );
 	yield  WaitForSeconds(0.8f);
 
-	//勝敗モーション
+	//勝ち
 	if(result == 1){
 		//紙ふぶきを降らせる
 		kami.SetActive(true);
-		res_move = GameObject.Find("pauseWin").GetComponent.<Animator>().runtimeAnimatorController;
-	}else{
-		res_move = GameObject.Find("pauseLose").GetComponent.<Animator>().runtimeAnimatorController;
+		//モーション遷移
+		user_rikishi.GetComponent(Animator).SetBool("yorokobi", true);
+	}
+	//負け
+	else{
+		user_rikishi.GetComponent(Animator).SetBool("kuyasi", true);
 	}
 	game_end();
 
@@ -416,9 +438,6 @@ function game_end(){
 
 	end_flg = true;	
 	
-	//勝敗モーションセット
-	user_rikishi.GetComponent.<Animator>().runtimeAnimatorController = res_move;
-	
 	//所定の位置と向きに変更
 	user_rikishi.transform.Rotate(0,90,0);
 	user_rikishi.transform.position.x = 30;
@@ -429,7 +448,7 @@ function game_end(){
 	MainCam.enabled = false;
 	MainAudioListener.enabled = false;
 	ResCam.enabled = true;
-	//ResAudioListener.enabled = true;
+	ResAudioListener.enabled = true;
 
 	Destroy(gameObject.Find("user_name"));
 	Destroy(gameObject.Find("enemy_name"));
@@ -446,8 +465,8 @@ function game_end(){
 function change_fade(){
 	//Update内で呼び出され続けられるので1回しか処理させない
 	if(end1st){
-		FadeOut( 1, Color.black );
-		Invoke( "window_change", 1 );
+		FadeOut( 0.5, Color.black );
+		Invoke( "window_change", 0.5 );
 	}
 	end1st = false;
 }

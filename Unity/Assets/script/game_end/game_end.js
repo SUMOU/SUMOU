@@ -22,7 +22,7 @@ public var SE_select : AudioClip;	//音を代入
 
 //遷移時フェードイン
 FadeOut( 0, Color.black );
-FadeIn( 0.7, Color.black );
+FadeIn( 0.5, Color.black );
 
 
 //ゲーム終了画面オブジェクト

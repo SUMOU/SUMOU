@@ -12,7 +12,7 @@ private var time : float;
 
 //遷移時フェードイン
 FadeOut( 0, Color.black );
-FadeIn( 0.7, Color.black );
+FadeIn( 0.5, Color.black );
 
 /**************
 *  音声宣言
@@ -64,12 +64,6 @@ var rikishis:GameObject;
 
 //力士モデル取得用
 var rikishi : GameObject[] = new GameObject[6]; //GameObjectの配列はUnityの組み込み配列を使う
-
-
-
-//力士選択後のモーション取得
-var select_move : RuntimeAnimatorController;
-select_move = GameObject.Find("move1").GetComponent.<Animator>().runtimeAnimatorController;
 
 
 //最初の1回実行される関数
@@ -132,23 +126,37 @@ function Update () {
 //■張り手
 //アニメーションチェンジ
 function animation_change(){
-	rikishi[select_No].GetComponent.<Animator>().runtimeAnimatorController = select_move;
-	FadeOut( 1.2, Color.black );
-	Invoke( "window_change", 1.2 );	//1.2秒後
+
+	//時間調整を行う
+	StartCoroutine("fade_change");
+//	rikishi[select_No].GetComponent.<Animator>().runtimeAnimatorController = select_move;
+//	rikishi[select_No].GetComponent.<Animator>().SetTrigger("onTrigger");
 }
 
-//■張り手
-//キャラ選択決定
-function window_change(){
+
+
+/**********************************
+* コルーチン（フェード～画面遷移）
+**********************************/
+function fade_change(): IEnumerator{
+
+	//モーションチェンジ
+	rikishi[select_No].GetComponent(Animator).SetBool("doya", true);
+
+	//発光
+	FadeIn( 0.5, Color.white );
+
+	yield  WaitForSeconds(2.2f);	//2.2秒後以下の処理を行う
 
 	//次の画面にselect_Noを渡す
 	PlayerPrefs.SetInt("select_No", select_No);
+
+	FadeOut( 0.4, Color.black );
 
 	//ゲーム画面遷移
 	Application.LoadLevel("demo");
 
 }
-
 
 
 

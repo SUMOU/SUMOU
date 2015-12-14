@@ -45,8 +45,8 @@ function Update () {
 		//一瞬画面を白くする
 		FadeIn( 0.6, Color.white );
 
-		//2秒後にfadeOを実行
-		Invoke( "fadeO", 2 );
+		//1.8秒後にfadeOを実行
+		Invoke( "fadeO", 1.8 );
 		
 	}
 
@@ -55,8 +55,8 @@ function Update () {
 
 //画面遷移用フェードアウト
 function fadeO(){
-	FadeOut( 0.7, Color.black );
-	Invoke( "window_change", 0.7 );
+	FadeOut( 0.5, Color.black );
+	Invoke( "window_change", 0.5 );
 }
 
 
