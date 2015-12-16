@@ -14,11 +14,20 @@ private var time : float;
 FadeOut( 0, Color.black );
 FadeIn( 0.5, Color.black );
 
+
 /**************
 *  音声宣言
 **************/
-public var sound : AudioSource;		//AudioSourceコンポーネント
-public var SE_select : AudioClip;	//音を代入
+var AudS_select : AudioSource;
+var AudS_taiko : AudioSource;
+var SE_select : AudioClip;	//セレクト
+var SE_taiko : AudioClip;	//太鼓
+
+//効果音格納オブジェクト取得用
+var obj_select:GameObject;
+var obj_taiko:GameObject;
+
+
 
 
 /**************************
@@ -69,8 +78,18 @@ var rikishi : GameObject[] = new GameObject[6]; //GameObjectの配列はUnityの
 //最初の1回実行される関数
 function Start () {
 
+
+	/*************
+	* 効果音取得
+	*************/
+	obj_select = GameObject.Find("select");
+	obj_taiko = GameObject.Find("taiko");
+	AudS_select = obj_select.gameObject.GetComponent(AudioSource);	//セレクト
+	AudS_taiko = obj_taiko.gameObject.GetComponent(AudioSource);	//太鼓
+
+
 	//効果音取得
-	sound = this.gameObject.GetComponent(AudioSource);
+	//sound = this.gameObject.GetComponent(AudioSource);
 	
 	//キャラテキスト取得
 	rikishi_name = GameObject.Find("rikishi_name");
@@ -143,8 +162,11 @@ function fade_change(): IEnumerator{
 	//モーションチェンジ
 	rikishi[select_No].GetComponent(Animator).SetBool("doya", true);
 
+	//太鼓音再生
+	AudS_taiko.PlayOneShot(SE_taiko);
+
 	//発光
-	FadeIn( 0.5, Color.white );
+	FadeIn( 0.4, Color.white );
 
 	yield  WaitForSeconds(2.2f);	//2.2秒後以下の処理を行う
 
@@ -164,8 +186,8 @@ function fade_change(): IEnumerator{
 //カーソル移動
 function select_moves(direction){
 
-	//効果音再生
-	sound.PlayOneShot(SE_select);
+	//セレクト音再生
+	AudS_select.PlayOneShot(SE_select);
 
 	//カーソル移動前のマテリアル（選択から外れたキャラの色）変更
 	GameObject.Find("char"+select_No).GetComponent.<MeshRenderer>().material = materials[0];

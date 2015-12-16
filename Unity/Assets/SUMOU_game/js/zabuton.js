@@ -92,6 +92,7 @@ function Update () {
 
 		//飛ばす座布団番号 乱数
 		r = Random.Range(0,12);
+		Debug.Log("座布団番号："+r);
 
 		//左座席0座布団
 		if(r==0){
@@ -110,6 +111,10 @@ function Update () {
 				  Vector3(30 , 20 , 0),
 				  ForceMode.VelocityChange
 				);
+
+				//回転
+				rb0.AddTorque(0,180,0);
+
 			}
 		}
 		//左座席1座布団
@@ -123,6 +128,7 @@ function Update () {
 				  Vector3(27 , 18 , 0),
 				  ForceMode.VelocityChange
 				);
+				rb1.AddTorque(0,180,0);
 			}
 		}
 		//左座席2座布団
@@ -136,6 +142,7 @@ function Update () {
 				  Vector3(30 , 20 , 0),
 				  ForceMode.VelocityChange
 				);
+				rb2.AddTorque(0,180,0);
 			}
 		}
 
@@ -150,6 +157,7 @@ function Update () {
 				  Vector3(0 , 20 , -30),
 				  ForceMode.VelocityChange
 				);
+				rb3.AddTorque(0,180,0);
 			}
 		}
 		//奥座席4座布団
@@ -163,6 +171,7 @@ function Update () {
 				  Vector3(0 , 18 , -27),
 				  ForceMode.VelocityChange
 				);
+				rb4.AddTorque(0,180,0);
 			}
 		}
 		//奥座席5座布団
@@ -176,6 +185,7 @@ function Update () {
 				  Vector3(0 , 20 , -30),
 				  ForceMode.VelocityChange
 				);
+				rb5.AddTorque(0,180,0);
 			}
 		}
 
@@ -190,6 +200,7 @@ function Update () {
 				  Vector3(-30 , 20 , 0),
 				  ForceMode.VelocityChange
 				);
+				rb6.AddTorque(0,180,0);
 			}
 		}
 		//右座席7座布団
@@ -203,6 +214,7 @@ function Update () {
 				  Vector3(-27 , 18 , 0),
 				  ForceMode.VelocityChange
 				);
+				rb7.AddTorque(0,180,0);
 			}
 		}
 		//右座席8座布団
@@ -216,6 +228,7 @@ function Update () {
 				  Vector3(-30 , 20 , 0),
 				  ForceMode.VelocityChange
 				);
+				rb8.AddTorque(0,180,0);
 			}
 		}
 
@@ -230,6 +243,7 @@ function Update () {
 				  Vector3(0 , 20 , 30),
 				  ForceMode.VelocityChange
 				);
+				rb9.AddTorque(0,180,0);
 			}
 		}
 		//手前座席10座布団
@@ -243,6 +257,7 @@ function Update () {
 				  Vector3(0 , 18 , 27),
 				  ForceMode.VelocityChange
 				);
+				rb10.AddTorque(0,180,0);
 			}
 		}
 		//手前座席11座布団
@@ -256,6 +271,7 @@ function Update () {
 				  Vector3(0 , 20 , 30),
 				  ForceMode.VelocityChange
 				);
+				rb11.AddTorque(0,180,0);
 			}
 		}
 

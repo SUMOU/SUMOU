@@ -9,9 +9,13 @@ var FirstAudioListener : AudioListener;
 /**************
 *  音声宣言
 **************/
-public var sound1 : AudioSource;	//AudioSourceコンポーネント
-public var SE_taiko : AudioClip;	//音を代入
+var AudS_taiko : AudioSource;
+var AudS_seien : AudioSource;
+var SE_taiko : AudioClip;	//太鼓
+var SE_seien : AudioClip;	//声援
 
+var taiko:GameObject;
+var seien:GameObject;
 
 
 /*************
@@ -47,6 +51,7 @@ FadeIn( 0.5, Color.black );
 var cam_flg1 : boolean=false;	//スタート時カメラを下へ動かすアニメーション
 var cam_flg2 : boolean=false;	//スタート時カメラアニメーション全体
 var cam_flg3 : boolean=false;	//力士視点に変更
+var cam_flg4 : boolean=false;	//はっけよい直前
 
 
 
@@ -120,7 +125,7 @@ var enemy_rikishi : GameObject;
 //var res_move : RuntimeAnimatorController;
 
 //回転アニメーション終了後 chage_fadeが呼び出され続けるのを防ぐ
-var end1st : boolean=true;
+var rote_end : boolean=true;
 
 
 
@@ -133,11 +138,21 @@ var res_fade1 : boolean=false;	//フェードアウト
 var kami:GameObject;
 
 
+//試合数
+var second:int;
+
+
 function Start () {
 	
+	Debug.Log("ゲームスタート");
 	
-	//太鼓効果音取得
-	sound1 = this.gameObject.GetComponent(AudioSource);
+	/*************
+	* 効果音取得
+	*************/
+	taiko = GameObject.Find("taiko");
+	seien = GameObject.Find("seien");
+	AudS_taiko = taiko.gameObject.GetComponent(AudioSource);	//太鼓
+	AudS_seien = seien.gameObject.GetComponent(AudioSource);	//声援
 
 	
 	/***************
@@ -165,7 +180,8 @@ function Start () {
 	//選択されたキャラ取得と表示
 	user_rikishi = rikishis1.transform.Find("rikishi"+rikishi_No).gameObject;	
 	user_rikishi.SetActive(true);
-	
+
+
 	//敵キャラの決定
 	while(r_loop == false){
 
@@ -185,7 +201,6 @@ function Start () {
 	//四股アニメーション取得
 	//user_shiko = GameObject.Find("shiko"+rikishi_No).GetComponent.<Animator>().runtimeAnimatorController;
 	//enemy_shiko = GameObject.Find("shiko"+r).GetComponent.<Animator>().runtimeAnimatorController;
-	
 
 	
 	MainCam = GameObject.Find("Main Camera").GetComponent.<Camera>();
@@ -246,85 +261,119 @@ function Start () {
 	res_mes = GameObject.Find("res_mes");
 	res_mes_tm = res_mes.GetComponent("TextMesh");
 
+
+
+
+	//試合数（2戦目以降はカメラ演出が変わる）
+	second = 1;
+
+	//2戦目以降のカメラと文字位置
+	if(second != 1){
+		MainCam.transform.position.x = 29.63598;
+		MainCam.transform.position.y = 104;
+		MainCam.transform.position.z = -52.6;
+		transform.position.y += 1.8;
+		transform.position.z += 1.2;
+		
+		//カメラの絶対角度
+		MainCam.transform.localEulerAngles.x = 326;
+	}
+
 }
 
 
 
 function Update () {
 
-//それぞれのキーで動く
-/*
-	if(Input.GetKeyDown(KeyCode.Q)){
-		hakuho.GetComponent(Animator).SetBool("kiai", true);
-	}
-	if(Input.GetKeyDown(KeyCode.W)){
-		hakuho.GetComponent(Animator).SetBool("shiko", true);
-	}
-	if(Input.GetKeyDown(KeyCode.E)){
-		hakuho.GetComponent(Animator).SetBool("junnbi", true);
-	}
-	if(Input.GetKeyDown(KeyCode.R)){
-		hakuho.GetComponent(Animator).SetBool("kamae", true);
-	}
-*/
-
-
-
-
-
-
-
-	/*********************
-	* ゲームスタート演出
-	*********************/
-	if(cam_flg2 == false){
-		//文字位置変更
-		if(transform.position.z <= -269){
-			transform.position.z += 1;
-			transform.position.y -= 0.6;
-			if(transform.position.z >= -274 && transform.position.z <= -273){
-				//効果音再生
-				sound1.PlayOneShot(SE_taiko);
+	//1戦目のカメラ
+	if(second == 1 && cam_flg4 == false){
+			
+		if(cam_flg2 == false){
+			//文字位置変更
+			if(transform.position.z <= -269){
+				transform.position.z += 1;
+				transform.position.y -= 0.6;
+				if(transform.position.z >= -274 && transform.position.z <= -273){
+					//太鼓と声援音再生
+					AudS_taiko.PlayOneShot(SE_taiko);
+					AudS_seien.PlayOneShot(SE_seien);
+				}
+			}
+			//カメラ位置変更（下へ）
+			if(MainCam.transform.position.y >= 100 && cam_flg1 == false){
+				MainCam.transform.position.y -= 0.4;
+				MainCam.transform.rotation.x -= 0.00035;
+			}
+			//カメラ位置変更（前へ）
+			else if(MainCam.transform.position.z <= -20){
+				//モデルを動かす
+				if(cam_flg1 == false){
+					//StartCoroutine("move_model");
+					user_rikishi.GetComponent(Animator).SetBool("kiai", true);
+					enemy_rikishi.GetComponent(Animator).SetBool("kiai", true);
+				}
+				cam_flg1 = true;
+				MainCam.transform.position.z += 0.75;
+				MainCam.transform.rotation.x -= 0.00016;
+				MainCam.transform.position.y -= 0.22;
+			}else{
+				cam_flg2 = true;
 			}
 		}
-		//カメラ位置変更（下へ）
-		if(MainCam.transform.position.y >= 100 && cam_flg1 == false){
-			MainCam.transform.position.y -= 0.4;
-			MainCam.transform.rotation.x -= 0.00035;
-//			MainCam.transform.position.y -= 0.8;
-//			MainCam.transform.rotation.x -= 0.0007;
-		}
-		//カメラ位置変更（前へ）
-		else if(MainCam.transform.position.z <= -20){
-			//モデルを動かす
-			if(cam_flg1 == false){
-//				StartCoroutine("move_model");
-				user_rikishi.GetComponent(Animator).SetBool("kiai", true);
-				enemy_rikishi.GetComponent(Animator).SetBool("kiai", true);
-			}
-			cam_flg1 = true;
-//			MainCam.transform.position.z += 2.1;
-//			MainCam.transform.rotation.x -= 0.00072;
-//			MainCam.transform.position.y -= 0.63;
-			MainCam.transform.position.z += 0.75;
-			MainCam.transform.rotation.x -= 0.00016;
-			MainCam.transform.position.y -= 0.22;
-		}else{
-			cam_flg2 = true;
-		}
+	
 	}
+	else if(second >= 2 && cam_flg4 == false){
 
+		user_rikishi.GetComponent(Animator).SetBool("kiai", true);
+		enemy_rikishi.GetComponent(Animator).SetBool("kiai", true);
+
+		if(cam_flg2 == false){
+			//文字位置変更
+			if(transform.position.y <= 98 && transform.position.z <= -33){
+				transform.position.z += 1;
+				transform.position.y += 0.4;
+				//効果音とモデルアニメーション
+				if(transform.position.z >= -37 && transform.position.z <= -36){
+					AudS_taiko.PlayOneShot(SE_taiko);
+					AudS_seien.PlayOneShot(SE_seien);
+				}
+			}
+			//カメラ位置変更（下へ）
+			if(MainCam.transform.position.y >= 54 && cam_flg1 == false){
+				MainCam.transform.position.y -= 0.15;
+			}
+			//カメラ位置変更（回転とか）
+			else if(MainCam.transform.position.y >= 28){
+				cam_flg1 = true;
+				MainCam.transform.position.z += 0.04;
+				MainCam.transform.position.y -= 0.2;
+				MainCam.transform.rotation.x += 0.003;
+			}else{
+				cam_flg2 = true;
+			}
+	
+		}
+	
+	}
+	
 
 	/**************************
-	* ゲーム開始直前 視点変更
+	* ゲーム開始遷移 視点変更
 	**************************/
 	if(cam_flg2 && cam_flg3 == false){
 		//視点変更
 		StartCoroutine("perspective_change");
-
 	}
-	
-	
+
+
+
+	//はっけよいに遷移
+	if(cam_flg4){
+		//Debug.Log("はっけよいに遷移");
+	}
+
+
+
 	/*******************
 	* ゲーム終了判定
 	*******************/
@@ -402,6 +451,13 @@ function perspective_change(): IEnumerator{
 	FadeIn( 0.3, Color.black );
 	yield  WaitForSeconds(1f);
 
+	//2戦目以降は処理を遅める
+	if(second != 1){
+		yield  WaitForSeconds(1f);
+	}
+
+	cam_flg4 = true;
+
 	Debug.Log("視点変更 完了");
 
 }
@@ -464,11 +520,11 @@ function game_end(){
 *******************/
 function change_fade(){
 	//Update内で呼び出され続けられるので1回しか処理させない
-	if(end1st){
+	if(rote_end){
 		FadeOut( 0.5, Color.black );
 		Invoke( "window_change", 0.5 );
 	}
-	end1st = false;
+	rote_end = false;
 }
 
 /***********
@@ -482,8 +538,6 @@ function window_change(){
 	//ゲーム画面遷移
 	Application.LoadLevel("game_end");
 }
-
-
 
 
 
