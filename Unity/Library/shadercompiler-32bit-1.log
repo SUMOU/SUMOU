@@ -1,10 +1,6 @@
-Base path: C:/Program Files/Unity/Editor/Data
-<<<<<<< HEAD
-Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-5116
-=======
+﻿Base path: C:/Program Files/Unity/Editor/Data
+
 Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-6656
->>>>>>> fujita
-Cmd: getPlatforms
 Unhandled exception: Readfile from pipe failed. GLE=パイプは終了しました。
 
 
