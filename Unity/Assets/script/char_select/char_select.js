@@ -12,13 +12,20 @@ private var time : float;
 
 //遷移時フェードイン
 FadeOut( 0, Color.black );
-FadeIn( 0.7, Color.black );
+
+FadeIn( 0.5, Color.black );
 
 /**************
 *  音声宣言
 **************/
-public var sound : AudioSource;		//AudioSourceコンポーネント
-public var SE_select : AudioClip;	//音を代入
+var AudS_select : AudioSource;
+var AudS_taiko : AudioSource;
+var SE_select : AudioClip;	//セレクト
+var SE_taiko : AudioClip;	//太鼓
+
+//効果音格納オブジェクト取得用
+var obj_select:GameObject;
+var obj_taiko:GameObject;
 
 
 /**************************
@@ -67,11 +74,6 @@ var rikishis:GameObject;
 var rikishi : GameObject[] = new GameObject[6]; //GameObjectの配列はUnityの組み込み配列を使う
 
 
-
-//力士選択後のモーション取得
-var select_move : RuntimeAnimatorController;
-select_move = GameObject.Find("move1").GetComponent.<Animator>().runtimeAnimatorController;
-
 /****************
 * 敵キャラ用乱数
 ****************/
@@ -81,8 +83,18 @@ var r_loop : boolean=false;
 //最初の1回実行される関数
 function Start () {
 
+
+	/*************
+	* 効果音取得
+	*************/
+	obj_select = GameObject.Find("select");
+	obj_taiko = GameObject.Find("taiko");
+	AudS_select = obj_select.gameObject.GetComponent(AudioSource);	//セレクト
+	AudS_taiko = obj_taiko.gameObject.GetComponent(AudioSource);	//太鼓
+
+
 	//効果音取得
-	sound = this.gameObject.GetComponent(AudioSource);
+	//sound = this.gameObject.GetComponent(AudioSource);
 	
 	//キャラテキスト取得
 	rikishi_name = GameObject.Find("rikishi_name");
@@ -112,7 +124,6 @@ function Start () {
 
   // シーン情報をサーバに送信
   Application.ExternalCall("setScene", "char_select");
-
 }
 
 //表示されている間繰り返し実行される関数
@@ -146,31 +157,44 @@ function animation_change(enm_no){
   // 敵力士情報をセット
   enemy_No = enm_no;
 
+	//時間調整を行う
+	StartCoroutine("fade_change");
+//	rikishi[select_No].GetComponent.<Animator>().runtimeAnimatorController = select_move;
+//	rikishi[select_No].GetComponent.<Animator>().SetTrigger("onTrigger");
+}
+
+
+
+/**********************************
+* コルーチン（フェード～画面遷移）
+**********************************/
+function fade_change(): IEnumerator{
+
   // シーン情報をサーバに送信
   Application.ExternalCall("setScene", "fade");
 
-	rikishi[select_No].GetComponent.<Animator>().runtimeAnimatorController = select_move;
-	FadeOut( 1.2, Color.black );
-	Invoke( "window_change", 1.2 );	//1.2秒後
-}
+	//モーションチェンジ
+	rikishi[select_No].GetComponent(Animator).SetBool("doya", true);
 
-//■張り手
-//キャラ選択決定
-function window_change(){
+	//太鼓音再生
+	AudS_taiko.PlayOneShot(SE_taiko);
+
+	//発光
+	FadeIn( 0.4, Color.white );
+
+	yield  WaitForSeconds(2.2f);	//2.2秒後以下の処理を行う
 
 	//次の画面にselect_Noを渡す
 	PlayerPrefs.SetInt("select_No", select_No);
-
   //敵キャラの決定
   PlayerPrefs.SetInt("enemy_No", enemy_No);
 
-  // キャラ選択情報をDBに送信
-  // Application.ExternalCall("rikishi_set", select_No);
+	FadeOut( 0.4, Color.black );
 
 	//ゲーム画面遷移
 	Application.LoadLevel("demo");
-}
 
+}
 
 
 
@@ -178,8 +202,8 @@ function window_change(){
 //カーソル移動
 function select_moves(direction){
 
-	//効果音再生
-	sound.PlayOneShot(SE_select);
+	//セレクト音再生
+	AudS_select.PlayOneShot(SE_select);
 
 	//カーソル移動前のマテリアル（選択から外れたキャラの色）変更
 	GameObject.Find("char"+select_No).GetComponent.<MeshRenderer>().material = materials[0];
@@ -284,7 +308,6 @@ function FadeOut( t_time : float , t_color : Color ){
     time = t_time;
     StartSequence( "FadeUpdate" );
 }
-
 // function ChooseEnemy (){
 //   while(r_loop == false){
 //     //乱数
