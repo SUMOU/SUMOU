@@ -154,20 +154,46 @@ function window_change(){
 
 	//画面遷移
 	if(select_No == 0){
+
+    // 前回の勝敗をサーバに送信する
+    if(result == 1){
+      Application.ExternalCall("winCounter",1);
+    }else{
+      Application.ExternalCall("winCounter",0);
+    }
+
+
 		Application.LoadLevel("demo");
 	}
 	else if(select_No == 1){
+
+    // 前回の勝敗をサーバに送信する
+    if(result == 1){
+      Application.ExternalCall("winCounter",1);
+    }else{
+      Application.ExternalCall("winCounter",0);
+    }
+
 		Application.LoadLevel("char_select");
 	}
 	else if(select_No == 2){
-    // 観戦側に情報を発信
+
+    // 前回の勝敗をサーバに送信する
+    if(result == 1){
+      Application.ExternalCall("winCounter",1);
+    }
+
+    // サーバー側に情報を発信
     Application.ExternalCall("gameEnd");
 		Application.LoadLevel("title");
 	}
 
 }
 
-
+function Decide (){
+  FadeOut( 0.3, Color.black );
+  Invoke( "window_change", 0.3 ); //0.3秒後
+}
 
 /************************
 * フェード イン/アウト

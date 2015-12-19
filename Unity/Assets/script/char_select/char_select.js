@@ -57,6 +57,7 @@ var materials:Material[];
 
 //選択されているキャラクタと番号（0～5）
 var select_No : int=0;
+var enemy_No : int=0;
 
 
 //力士格納ゲームオブジェクト取得用（初期状態が非アクティブ{非表示}のオブジェクトは親から子の順で取得する）
@@ -71,6 +72,11 @@ var rikishi : GameObject[] = new GameObject[6]; //GameObjectの配列はUnityの
 var select_move : RuntimeAnimatorController;
 select_move = GameObject.Find("move1").GetComponent.<Animator>().runtimeAnimatorController;
 
+/****************
+* 敵キャラ用乱数
+****************/
+var r:int;
+var r_loop : boolean=false;
 
 //最初の1回実行される関数
 function Start () {
@@ -126,7 +132,8 @@ function Update () {
 	//■張り手
 	//Enterキー押下
 	if(Input.GetKeyDown(KeyCode.Return)){
-		animation_change();
+    var e_no = 0;
+		animation_change(e_no);
 	}
 	
 }
@@ -134,7 +141,10 @@ function Update () {
 
 //■張り手
 //アニメーションチェンジ
-function animation_change(){
+function animation_change(enm_no){
+
+  // 敵力士情報をセット
+  enemy_No = enm_no;
 
   // シーン情報をサーバに送信
   Application.ExternalCall("setScene", "fade");
@@ -151,11 +161,14 @@ function window_change(){
 	//次の画面にselect_Noを渡す
 	PlayerPrefs.SetInt("select_No", select_No);
 
-	//ゲーム画面遷移
-	Application.LoadLevel("demo");
+  //敵キャラの決定
+  PlayerPrefs.SetInt("enemy_No", enemy_No);
 
   // キャラ選択情報をDBに送信
-  Application.ExternalCall("rikishi_set", select_No);
+  // Application.ExternalCall("rikishi_set", select_No);
+
+	//ゲーム画面遷移
+	Application.LoadLevel("demo");
 }
 
 
@@ -189,6 +202,9 @@ function select_moves(direction){
 			select_No++;
 		}
 	}
+
+  // キャラ選択情報をサーバに送信
+  Application.ExternalCall("chooseUser", select_No);
 
 	//カーソル移動後のマテリアル（選択キャラの色）変更
 	GameObject.Find("char"+select_No).GetComponent.<MeshRenderer>().material = materials[1];
@@ -268,3 +284,15 @@ function FadeOut( t_time : float , t_color : Color ){
     time = t_time;
     StartSequence( "FadeUpdate" );
 }
+
+// function ChooseEnemy (){
+//   while(r_loop == false){
+//     //乱数
+//     r = Random.Range(1, 7);
+//     //プレイヤーと違う力士の場合ループから抜ける
+//     if(r != select_No){
+//       r_loop = true;
+//     }
+//   }
+//   return r;
+// }

@@ -92,7 +92,7 @@ var res_mes_tm:TextMesh;
 * 敵キャラ用乱数
 ****************/
 var r:int;
-var r_loop : boolean=false;
+// var r_loop : boolean=false;
 
 
 
@@ -130,7 +130,12 @@ var kami:GameObject;
 
 
 function Start () {
-	
+	// シーン情報をサーバに送信
+  Application.ExternalCall("setScene", "game_play");
+
+  // 観戦側に情報を発信
+  Application.ExternalCall("gameStart");
+
 	/***************
 	* 紙ふぶき取得
 	***************/
@@ -148,6 +153,16 @@ function Start () {
 	}else{
 		rikishi_No=1;
 	}
+	//敵力士番号取得
+	if(PlayerPrefs.GetInt("enemy_No")){
+		r = PlayerPrefs.GetInt("enemy_No");
+		r++;
+	}else{
+		r=2;
+	}
+
+	// 力士番号をサーバに送信
+	// Application.ExternalCall("setRikishi", rikishi_No);
 
 	//力士格納ゲームオブジェクト取得
 	rikishis1 = GameObject.Find("user");
@@ -160,7 +175,7 @@ function Start () {
 	user_rikishi.AddComponent.<action_user>();
 	
 	//敵キャラの決定
-	while(r_loop == false){
+	/*while(r_loop == false){
 
 		//乱数
 		r = Random.Range(1, 7);
@@ -170,7 +185,7 @@ function Start () {
 			r_loop = true;
 		}
 		
-	}
+	}*/
 	//敵力士表示
 	enemy_rikishi = rikishis2.transform.Find("rikishi"+r).gameObject;	
 	enemy_rikishi.SetActive(true);
@@ -241,13 +256,11 @@ function Start () {
 	res_mes = GameObject.Find("res_mes");
 	res_mes_tm = res_mes.GetComponent("TextMesh");
 
-
 	// シーン情報をサーバに送信
   Application.ExternalCall("setScene", "game_play");
 
   // 観戦側に情報を発信
-  Application.ExternalCall("gameStart");
-	
+  Application.ExternalCall("gameStart");	
 }
 
 
@@ -540,7 +553,6 @@ function Zabuton (){
 function Win (){
 	if(end_flg == false){
 		result = 1;
-		Application.ExternalEval("win_num++");
 		//勝敗フェード呼び出し
 		StartCoroutine("res_fadeOut");
 	}
@@ -557,3 +569,15 @@ function Lose () {
 		StartCoroutine("res_fadeOut");
 	}
 }
+
+/*function ChooseEnemy (r_num){
+
+	Application.ExternalCall("gameStart");
+
+	//敵力士表示
+	enemy_rikishi = rikishis2.transform.Find("rikishi"+r_num).gameObject;	
+	enemy_rikishi.SetActive(true);
+	// 選ばれた力士にスクリプトを当てる
+	enemy_rikishi.AddComponent.<action_enemy>();
+	yield;
+}*/

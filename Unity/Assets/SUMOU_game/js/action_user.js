@@ -11,10 +11,6 @@ var start = false;
 function Update () {
 	var anim:Animator = GetComponent("Animator");
 	var harite = false;
-	if(Input.GetButtonUp("Jump")){
-		Debug.Log(anim.GetCurrentAnimatorStateInfo(0));
-	}
-
 	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kamae") && Input.GetButtonUp("Jump")){
 		// 試合時間計測開始
 		if(!start) Application.ExternalCall("startTimer");
@@ -48,7 +44,7 @@ function harite(){
 
 		//アニメーション:startかつスペースを押したら始まる
 		start = true;
-		
+		Debug.Log('張り手！@ゲーム');
 		// スクショ
 		// Application.CaptureScreenshot("screenshot.png");
 

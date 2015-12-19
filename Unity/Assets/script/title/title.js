@@ -32,6 +32,8 @@ function Start () {
 
     // シーン情報をサーバに送信
     Application.ExternalCall("setScene", "title");
+    // ゲーム結果情報リセット
+    Application.ExternalCall("resetRsult");
 }
 
 //表示されている間繰り返し実行される関数
