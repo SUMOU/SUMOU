@@ -4,6 +4,7 @@ var MainCam : Camera;//メインカメラ
 var FirstCam : Camera;//一人称視点カメラ
 var MainAudioListener : AudioListener;//よくわからんけど必要みたい？ ないと警告が出る
 var FirstAudioListener : AudioListener;
+var CanGUI : Canvas;
 
 
 /**************
@@ -11,11 +12,17 @@ var FirstAudioListener : AudioListener;
 **************/
 var AudS_taiko : AudioSource;
 var AudS_seien : AudioSource;
+var AudS_win : AudioSource;
+var AudS_lose : AudioSource;
 var SE_taiko : AudioClip;	//太鼓
 var SE_seien : AudioClip;	//声援
+var MU_win : AudioClip;		//win声援
+var MU_lose : AudioClip;	//lose声援
 
 var taiko:GameObject;
 var seien:GameObject;
+var win:GameObject;
+var lose:GameObject;
 
 
 /*************
@@ -29,7 +36,7 @@ var RoteCam:GameObject;
 var rote : int=1;
 var rote_count : int=0;
 var rote_flg : boolean=false;
-var timer:float=0;
+var timer : float=0;
 
 
 
@@ -128,7 +135,6 @@ var enemy_rikishi : GameObject;
 var rote_end : boolean=true;
 
 
-
 //ゲーム終了判定
 var end_flg : boolean=false;
 var res_fade1 : boolean=false;	//フェードアウト
@@ -142,17 +148,54 @@ var kami:GameObject;
 var second:int;
 
 
+
+
+
+
+// オブジェクト取得
+var enemy:GameObject;// enemy(親要素)を取得
+var barrier:GameObject;
+var user:GameObject;
+var hakkeyoi:GameObject;
+var nokotta:GameObject;
+
+// HP用
+var slider:UI.Slider;// HP(GUI・Slider)用変数
+private var Current_HP:float = 0;//hp
+private var hp:float = 20;//hp
+
+//初期位置
+var start_pos:float = 0;
+var diff:float = 0;
+var last_pos:float = 0;
+
+// アニメーター
+var anim:Animator;
+
+
+//勝敗判定用
+var res_swi:GameObject;
+res_swi = GameObject.Find("res_switch");
+
+
+
+
 function Start () {
 	
 	Debug.Log("ゲームスタート");
-	
+
+
 	/*************
 	* 効果音取得
 	*************/
 	taiko = GameObject.Find("taiko");
 	seien = GameObject.Find("seien");
+	win = GameObject.Find("win");
+	lose = GameObject.Find("lose");
 	AudS_taiko = taiko.gameObject.GetComponent(AudioSource);	//太鼓
 	AudS_seien = seien.gameObject.GetComponent(AudioSource);	//声援
+	AudS_win = win.gameObject.GetComponent(AudioSource);		//win声援
+	AudS_lose = lose.gameObject.GetComponent(AudioSource);		//lose声援
 
 	
 	/***************
@@ -174,11 +217,11 @@ function Start () {
 	}
 
 	//力士格納ゲームオブジェクト取得
-	rikishis1 = GameObject.Find("user");
-	rikishis2 = GameObject.Find("enemy");
+	rikishis1 = GameObject.Find("CollisionPoint_user");
+	rikishis2 = GameObject.Find("CollisionPoint_enemy");
 	
 	//選択されたキャラ取得と表示
-	user_rikishi = rikishis1.transform.Find("rikishi"+rikishi_No).gameObject;	
+	user_rikishi = rikishis1.transform.Find("rikishi"+rikishi_No).gameObject;
 	user_rikishi.SetActive(true);
 
 
@@ -195,12 +238,41 @@ function Start () {
 		
 	}
 	//敵力士表示
-	enemy_rikishi = rikishis2.transform.Find("rikishi"+r).gameObject;	
+	enemy_rikishi = rikishis2.transform.Find("rikishi"+r).gameObject;
 	enemy_rikishi.SetActive(true);
 	
 	//四股アニメーション取得
 	//user_shiko = GameObject.Find("shiko"+rikishi_No).GetComponent.<Animator>().runtimeAnimatorController;
 	//enemy_shiko = GameObject.Find("shiko"+r).GetComponent.<Animator>().runtimeAnimatorController;
+
+
+
+
+
+
+	CanGUI = GameObject.Find("GUI").GetComponent.<Canvas>();
+	CanGUI.enabled = false;
+
+	/*HPの諸々の処理*/
+	// userの現在地
+	var user_pos = user_rikishi.transform.position.x;
+	start_pos = user_pos;
+	var barrier_pos:float = barrier.transform.position.x;
+
+	// sliderのvalueにhpを代入
+	slider.maxValue = (start_pos - barrier_pos)*2-barrier_pos;
+	slider.minValue = barrier_pos;
+	slider.value = start_pos;
+	/*ここまで*/
+
+	// はっけよい→のこったの描写on/off
+	hakkeyoi.SetActive(false);
+	nokotta.SetActive(false);
+
+
+
+
+
 
 	
 	MainCam = GameObject.Find("Main Camera").GetComponent.<Camera>();
@@ -265,7 +337,7 @@ function Start () {
 
 
 	//試合数（2戦目以降はカメラ演出が変わる）
-	second = 1;
+	second = 2;
 
 	//2戦目以降のカメラと文字位置
 	if(second != 1){
@@ -282,8 +354,8 @@ function Start () {
 }
 
 
-
 function Update () {
+
 
 	//1戦目のカメラ
 	if(second == 1 && cam_flg4 == false){
@@ -369,7 +441,16 @@ function Update () {
 
 	//はっけよいに遷移
 	if(cam_flg4){
-		//Debug.Log("はっけよいに遷移");
+
+		anim = user_rikishi.GetComponent("Animator");
+		if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kamae")){
+			hakkeyoi.SetActive(true);
+		}else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kaisi")){
+			hakkeyoi.SetActive(false);
+			nokotta.SetActive(true);
+			Invoke("dereat",0.8);
+		}
+
 	}
 
 
@@ -377,16 +458,16 @@ function Update () {
 	/*******************
 	* ゲーム終了判定
 	*******************/
-	//左クリック　勝ち
-	if(Input.GetMouseButtonDown(0) && end_flg == false){
+	//勝ち
+	if(res_swi.transform.position.x == 20 && end_flg == false){
 
 		result = 1;
 		//勝敗フェード呼び出し
 		StartCoroutine("res_fadeOut");
 	
 	}
-	//右クリック　負け
-	if(Input.GetMouseButtonDown(1) && end_flg == false){
+	//負け
+	if(res_swi.transform.position.x == 30 && end_flg == false){	//Input.GetMouseButtonDown(1)
 
 		res_mes_tm.text = "敗北";
 		res_user_tm.color =Color.black;
@@ -422,7 +503,51 @@ function Update () {
 		}
 	}
 
+
+
+
+
+
+
+	// アニメーション終了と同時にカメラが切り替わる(14秒後呼び出し)
+/*	Invoke("CamChange",14);
+
+	// はっけよい→のこった
+	anim = user.GetComponent("Animator");
+	if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kamae")){
+		hakkeyoi.SetActive(true);
+	}else if(anim.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.kaisi")){
+		hakkeyoi.SetActive(false);
+		nokotta.SetActive(true);
+		Invoke("dereat",0.8);
+	}
+*/
+	/*HPの諸々の処理*/
+
+	var Current_pos:float = user_rikishi.transform.position.x;
+	
+	if(last_pos == 0){
+		diff = Current_pos - start_pos;
+	}else{
+		diff = Current_pos - last_pos;	
+	}
+
+	slider.value = slider.value + diff;
+	last_pos = Current_pos;
+	/*ここまで*/
+
+
+
 }
+
+
+
+function dereat(){
+	nokotta.SetActive(false);
+}
+
+
+
 
 
 /**************************
@@ -442,11 +567,14 @@ function perspective_change(): IEnumerator{
 	Destroy(user_name);
 	Destroy(enemy_name);
 
+
+
 	//カメラ（視点）変更
 	MainCam.enabled = false;
 	MainAudioListener.enabled = false;
 	FirstCam.enabled = true;
 	FirstAudioListener.enabled = true;
+
 
 	FadeIn( 0.3, Color.black );
 	yield  WaitForSeconds(1f);
@@ -468,6 +596,8 @@ function perspective_change(): IEnumerator{
 **********************************/
 function res_fadeOut(): IEnumerator{
 
+	end_flg = true;	
+
 	Debug.Log("勝敗 画面フェードアウト中…");
 	FadeOut( 0.6, Color.white );
 	yield  WaitForSeconds(0.8f);
@@ -478,10 +608,17 @@ function res_fadeOut(): IEnumerator{
 		kami.SetActive(true);
 		//モーション遷移
 		user_rikishi.GetComponent(Animator).SetBool("yorokobi", true);
+		
+		//声援のループ再生
+		AudS_win.loop = true;
+		AudS_win.Play();
+
 	}
 	//負け
 	else{
 		user_rikishi.GetComponent(Animator).SetBool("kuyasi", true);
+		AudS_lose.loop = true;
+		AudS_lose.Play();
 	}
 	game_end();
 
@@ -495,9 +632,9 @@ function game_end(){
 	end_flg = true;	
 	
 	//所定の位置と向きに変更
-	user_rikishi.transform.Rotate(0,90,0);
+//	user_rikishi.transform.Rotate(0,90,0);
 	user_rikishi.transform.position.x = 30;
-	user_rikishi.transform.position.z = 2;
+//	user_rikishi.transform.position.z = 2;
 	
 	//カメラ切り替え
 	GameObject.Find("Camera_FirstPerson").SetActive(false);
@@ -506,7 +643,7 @@ function game_end(){
 	ResCam.enabled = true;
 	ResAudioListener.enabled = true;
 
-	Destroy(gameObject.Find("user_name"));
+	(gameObject.Find("user_name"));
 	Destroy(gameObject.Find("enemy_name"));
 	Destroy(enemy_rikishi);
 
